@@ -123,3 +123,4 @@ ambos casos.
 Next.js 14 (App Router) · React 18 · TypeScript · TailwindCSS 3.4 ·
 Framer Motion (todas las animaciones discretas) · GSAP + ScrollTrigger (solo
 el paralaje del Hero) · Lenis (scroll suave) · Lucide Icons + React Icons.
+# portfolio-2026
