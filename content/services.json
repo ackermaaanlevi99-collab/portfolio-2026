@@ -1,0 +1,62 @@
+[
+  {
+    "id": "publicitario",
+    "code": "PUB",
+    "title": "Diseño Publicitario",
+    "description": "Piezas gráficas para vallas, backings, rotulados e impresión de gran formato, adaptadas a cada soporte y pensadas para captar la atención donde más importa.",
+    "icon": "Megaphone",
+    "image": null,
+    "gif": null,
+    "button": { "label": "Cotizar", "href": "#contacto" }
+  },
+  {
+    "id": "textil",
+    "code": "TXT",
+    "title": "Diseño Textil",
+    "description": "Diseños para DTF, vinil textil, serigrafía y sublimación, cuidando cada detalle del proceso para asegurar acabados de alta calidad en cada prenda.",
+    "icon": "Shirt",
+    "image": null,
+    "gif": null,
+    "button": { "label": "Cotizar", "href": "#contacto" }
+  },
+  {
+    "id": "3d",
+    "code": "3D",
+    "title": "Visualización 3D",
+    "description": "Modelado y renderizado arquitectónico y de producto en SketchUp, V-Ray y Twinmotion para presentar tu proyecto antes de construirlo.",
+    "icon": "Box",
+    "image": null,
+    "gif": null,
+    "button": { "label": "Cotizar", "href": "#contacto" }
+  },
+  {
+    "id": "identidad",
+    "code": "BRD",
+    "title": "Identidad de Marca",
+    "description": "Logotipos y sistemas visuales coherentes —color, tipografía y aplicaciones— para que tu marca se reconozca al instante en cualquier soporte.",
+    "icon": "PenTool",
+    "image": null,
+    "gif": null,
+    "button": { "label": "Cotizar", "href": "#contacto" }
+  },
+  {
+    "id": "ilustracion",
+    "code": "ILU",
+    "title": "Ilustración",
+    "description": "Ilustración digital a medida para packaging, campañas publicitarias y contenido de marca, con un estilo propio y aplicable a distintos formatos.",
+    "icon": "Palette",
+    "image": null,
+    "gif": null,
+    "button": { "label": "Cotizar", "href": "#contacto" }
+  },
+  {
+    "id": "socialmedia",
+    "code": "SOC",
+    "title": "Diseño para Redes Sociales",
+    "description": "Contenido gráfico estratégico para que tu marca se vea consistente y profesional en cada plataforma, semana tras semana.",
+    "icon": "Share2",
+    "image": null,
+    "gif": null,
+    "button": { "label": "Cotizar", "href": "#contacto" }
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "name": "Emmanuel Aranguibel González",
+  "role": "Diseñador Gráfico",
+  "story": "Soy diseñador gráfico enfocado en crear soluciones visuales claras, funcionales y atractivas. Tengo experiencia en el área publicitaria, donde he trabajado en vallas publicitarias, backings, rotulados e impresiones de gran formato. También me he desempeñado en el sector textil, creando diseños para DTF, vinil textil, serigrafía y sublimación, cuidando cada detalle del proceso para asegurar resultados de alta calidad. Además, cuento con conocimientos en diseño 3D utilizando diversos software de modelado, lo que me permite ampliar mi enfoque hacia la visualización y el modelado.",
+  "experience": [
+    {
+      "role": "Diseño Publicitario",
+      "company": "Graphic Public",
+      "period": "2025",
+      "bullets": [
+        "Diseño y adaptación de vallas publicitarias",
+        "Desarrollo de backings y rotulados comerciales",
+        "Preparación de archivos para impresión en gran formato",
+        "Supervisión y control de calidad en procesos de producción gráfica"
+      ]
+    },
+    {
+      "role": "Diseño Textil",
+      "company": "Utopía Group",
+      "period": "2025 — Actualidad",
+      "bullets": [
+        "Desarrollo de diseños para DTF, vinil textil, serigrafía y sublimación",
+        "Preparación técnica de archivos para producción textil",
+        "Optimización de acabados y control de calidad en impresión",
+        "Adaptación de artes según tipo de prenda y técnica de aplicación"
+      ]
+    },
+    {
+      "role": "Diseño 3D y Visualización",
+      "company": "Sistema Teleférico Warairarepano",
+      "period": "2024",
+      "bullets": [
+        "Modelado 3D en SketchUp",
+        "Renderizado con V-Ray",
+        "Visualización arquitectónica y conceptual con Twinmotion",
+        "Desarrollo de propuestas visuales para presentación de proyectos"
+      ]
+    }
+  ],
+  "skills": ["Adobe Photoshop", "Adobe Illustrator", "SketchUp", "V-Ray", "Twinmotion", "IA en procesos de diseño"],
+  "education": [
+    { "title": "3er semestre — Diseño Gráfico", "institution": "L.U.Z, Universidad del Zulia" },
+    { "title": "Bachiller en Ciencias Naturales", "institution": "" }
+  ]
+}

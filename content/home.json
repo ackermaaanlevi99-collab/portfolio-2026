@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "eyebrow": "Estudio de Diseño — Caracas, VE",
+    "title": "Diseño que transforma marcas",
+    "highlightWord": "transforma",
+    "subtitle": "Diseño publicitario, identidad de marca, diseño textil y visualización 3D bajo un mismo estándar de calidad. Convierto ideas en piezas visuales que conectan y venden.",
+    "primaryButton": { "label": "Ver proyectos", "href": "#portfolio" },
+    "secondaryButton": { "label": "Hablemos", "href": "#contacto" },
+    "scrollIndicator": "Desplázate",
+    "background": { "type": "blueprint" }
+  }
+}

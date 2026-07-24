@@ -1,0 +1,16 @@
+{
+  "background": "#F0ECE2",
+  "backgroundAlt": "#E6DFCC",
+  "surface": "#FFFFFF",
+  "border": "#DCD5C2",
+  "text": "#17150F",
+  "textSecondary": "#4A4738",
+  "muted": "#8C8672",
+  "primary": "#1E3AE0",
+  "primaryDark": "#15299E",
+  "secondary": "#17150F",
+  "accent": "#E8432E",
+  "success": "#2F8F5B",
+  "warning": "#C8791A",
+  "error": "#D33A2C"
+}

@@ -1,0 +1,26 @@
+{
+  "brand": {
+    "name": "Aranguibel Studio",
+    "shortName": "AG.",
+    "tagline": "Diseño gráfico, publicitario, textil y visualización 3D"
+  },
+  "meta": {
+    "titleDefault": "Aranguibel Studio — Diseño Gráfico & Visualización 3D",
+    "titleTemplate": "%s | Aranguibel Studio",
+    "description": "Estudio de diseño gráfico especializado en publicidad, diseño textil, identidad de marca y visualización 3D. Piezas visuales que conectan y venden.",
+    "keywords": ["diseño gráfico", "diseño publicitario", "diseño textil", "visualización 3D", "identidad de marca", "Venezuela"]
+  },
+  "buttons": {
+    "viewProjects": "Ver proyectos",
+    "letsTalk": "Hablemos",
+    "sendMessage": "Enviar mensaje",
+    "requestQuote": "Cotizar",
+    "viewProject": "Ver proyecto",
+    "backToTop": "Volver arriba",
+    "sending": "Enviando...",
+    "sent": "Mensaje enviado"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

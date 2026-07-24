@@ -1,0 +1,17 @@
+[
+  {
+    "quote": "Reemplaza este texto con el comentario real de un cliente sobre tu trabajo.",
+    "name": "Nombre del cliente",
+    "role": "Placeholder — reemplazar en testimonials.json"
+  },
+  {
+    "quote": "Añade aquí una segunda reseña real cuando la tengas disponible.",
+    "name": "Nombre del cliente",
+    "role": "Placeholder — reemplazar en testimonials.json"
+  },
+  {
+    "quote": "Este bloque está pensado para varios testimonios; agrega o quita entradas en este archivo.",
+    "name": "Nombre del cliente",
+    "role": "Placeholder — reemplazar en testimonials.json"
+  }
+]

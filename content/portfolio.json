@@ -1,0 +1,69 @@
+[
+  {
+    "slug": "utopia-group-catalogo-textil",
+    "name": "Utopía Group — Catálogo Textil 2026",
+    "description": "Diseño y preparación técnica de artes para el catálogo textil 2026 de Utopía Group: hoodies, camisas oxford, chalecos, scrubs y uniformes deportivos, con acabados en DTF, vinil textil, serigrafía y sublimación.",
+    "category": "Diseño Textil",
+    "year": "2026",
+    "tags": ["DTF", "Sublimación", "Serigrafía", "Catálogo"],
+    "thumbnail": "/images/portfolio/utopia-cover.jpg",
+    "cover": "/images/portfolio/utopia-cover.jpg",
+    "gallery": [
+      "/images/portfolio/utopia-01.jpg",
+      "/images/portfolio/utopia-02.jpg",
+      "/images/portfolio/utopia-03.jpg",
+      "/images/portfolio/utopia-04.jpg"
+    ],
+    "gif": null,
+    "video": null
+  },
+  {
+    "slug": "tu-sitio-waraira",
+    "name": "Tu Sitio Waraira — Identidad & Señalética",
+    "description": "Diseño y desarrollo de rotulación comercial para la cafetería Tu Sitio Waraira: backings iluminados, vinil de vitrina y señalética interior, preparados para impresión y montaje en gran formato.",
+    "category": "Diseño Publicitario",
+    "year": "2026",
+    "tags": ["Rotulación", "Vinil", "Backing", "Gran formato"],
+    "thumbnail": "/images/portfolio/waraira-cover.jpg",
+    "cover": "/images/portfolio/waraira-cover.jpg",
+    "gallery": [
+      "/images/portfolio/waraira-01.jpg",
+      "/images/portfolio/waraira-02.jpg",
+      "/images/portfolio/waraira-03.jpg"
+    ],
+    "gif": null,
+    "video": null
+  },
+  {
+    "slug": "billy-burgers-food-truck",
+    "name": "Billy Burger's — Diseño de Food Truck",
+    "description": "Identidad visual y wrap completo para el food truck Billy Burger's: personaje de marca, iconografía y aplicación del diseño sobre el vehículo, desde la maqueta hasta la instalación final.",
+    "category": "Branding Vehicular",
+    "year": "2025",
+    "tags": ["Branding", "Ilustración", "Wrap vehicular"],
+    "thumbnail": "/images/portfolio/billyburgers-cover.jpg",
+    "cover": "/images/portfolio/billyburgers-cover.jpg",
+    "gallery": [
+      "/images/portfolio/billyburgers-01.jpg",
+      "/images/portfolio/billyburgers-02.jpg",
+      "/images/portfolio/billyburgers-03.jpg"
+    ],
+    "gif": null,
+    "video": null
+  },
+  {
+    "slug": "visualizacion-3d-restaurante",
+    "name": "Visualización 3D — Concepto de Restaurante",
+    "description": "Modelado y renderizado de un concepto de interiorismo gastronómico: distribución de espacios, paleta cromática y ambientación, desarrollado en SketchUp y V-Ray para presentación de proyecto.",
+    "category": "Diseño 3D",
+    "year": "2024",
+    "tags": ["SketchUp", "V-Ray", "Interiorismo"],
+    "thumbnail": "/images/portfolio/restaurante-cover.jpg",
+    "cover": "/images/portfolio/restaurante-cover.jpg",
+    "gallery": [
+      "/images/portfolio/restaurante-01.jpg"
+    ],
+    "gif": null,
+    "video": null
+  }
+]

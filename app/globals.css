@@ -2,20 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #050505;
+  color: #ffffff;
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* EFECTO TEXTO 3D VERDE NEÓN */
+.text-neon-3d {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 255, 102, 0.8), 0 0 20px rgba(0, 255, 102, 0.5),
+    0 0 40px rgba(0, 255, 102, 0.3), 2px 2px 0px #008837, 4px 4px 0px #004d1f;
+}
+
+/* BOTÓN NEÓN 3D */
+.btn-neon-green {
+  background: #00ff66;
+  color: #050505;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 0 20px rgba(0, 255, 102, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-neon-green:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 35px rgba(0, 255, 102, 0.7),
+    inset 0 2px 6px rgba(255, 255, 255, 0.8);
+}
+
+/* TARJETAS ESTILO PORTAFOLIO 2026 */
+.portfolio-card {
+  background: rgba(14, 14, 17, 0.8);
+  border: 1px solid rgba(0, 255, 102, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+  border-color: rgba(0, 255, 102, 0.6);
+  box-shadow: 0 0 25px rgba(0, 255, 102, 0.2);
+  transform: translateY(-4px);
 }
