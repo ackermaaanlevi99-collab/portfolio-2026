@@ -4,6 +4,9 @@ import { Big_Shoulders_Display } from "next/font/google";
 const bigShoulders = Big_Shoulders_Display({
   subsets: ["latin"],
 });
+const bigShoulders = Big_Shoulders_Display({
+  subsets: ["latin"],
+});
 import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import Cursor from "@/components/layout/Cursor";
