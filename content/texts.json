@@ -1,26 +1,23 @@
 {
-  "brand": {
-    "name": "Aranguibel Studio",
-    "shortName": "AG.",
-    "tagline": "Diseño gráfico, publicitario, textil y visualización 3D"
-  },
+  "brand": {"name":"Aranguibel Studio","person":"Emmanuel Aranguibel González","short":"AG."},
   "meta": {
-    "titleDefault": "Aranguibel Studio — Diseño Gráfico & Visualización 3D",
-    "titleTemplate": "%s | Aranguibel Studio",
-    "description": "Estudio de diseño gráfico especializado en publicidad, diseño textil, identidad de marca y visualización 3D. Piezas visuales que conectan y venden.",
-    "keywords": ["diseño gráfico", "diseño publicitario", "diseño textil", "visualización 3D", "identidad de marca", "Venezuela"]
+    "titleDefault":"Emmanuel Aranguibel González — Diseño gráfico y dirección visual",
+    "titleTemplate":"%s | Aranguibel Studio",
+    "description":"Portafolio de Emmanuel Aranguibel González, diseñador gráfico en Caracas, Venezuela. Identidad de marca, diseño publicitario, textil, ilustración y visualización 3D.",
+    "notFound":"No encontramos esta página. Puedes volver a los proyectos publicados."
   },
-  "buttons": {
-    "viewProjects": "Ver proyectos",
-    "letsTalk": "Hablemos",
-    "sendMessage": "Enviar mensaje",
-    "requestQuote": "Cotizar",
-    "viewProject": "Ver proyecto",
-    "backToTop": "Volver arriba",
-    "sending": "Enviando...",
-    "sent": "Mensaje enviado"
+  "navigation": {
+    "home":"Inicio","work":"Proyectos","services":"Servicios","about":"Sobre mí","contact":"Contacto",
+    "menuOpen":"Abrir menú de navegación","menuClose":"Cerrar menú de navegación"
   },
-  "footer": {
-    "rights": "Todos los derechos reservados."
+  "common": {
+    "viewProject":"Ver proyecto","viewAllProjects":"Explorar todos los proyectos",
+    "openBehance":"Ver proyecto original en Behance","backToProjects":"Volver a proyectos",
+    "previousProject":"Proyecto anterior","nextProject":"Siguiente proyecto","scrollToTop":"Volver arriba"
+  },
+  "contact": {
+    "successTitle":"Gracias por enviar tu consulta",
+    "successBody":"Netlify confirmó la recepción de tu mensaje. Emmanuel podrá revisarlo a través del sitio.",
+    "backHome":"Volver al inicio","validation":"Revisa los campos marcados e inténtalo otra vez."
   }
 }

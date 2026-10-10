@@ -1,0 +1,40 @@
+{
+  "slug": "iaim-prendas",
+  "title": "PRENDAS IAIM (cortavientos)",
+  "categories": [
+    "textil"
+  ],
+  "services": [
+    "diseno-textil"
+  ],
+  "year": null,
+  "status": "draft-unconfirmed",
+  "published": false,
+  "featured": false,
+  "description": null,
+  "client": null,
+  "tools": [],
+  "cover": "/assets/projects/iaim-prendas/e35b4b52-2c4d-425e-93bb-7865ee3e047a.webp",
+  "gallery": [
+    {
+      "src": "/assets/projects/iaim-prendas/e35b4b52-2c4d-425e-93bb-7865ee3e047a.webp",
+      "srcSm": "/assets/projects/iaim-prendas/e35b4b52-2c4d-425e-93bb-7865ee3e047a-sm.webp",
+      "width": 1417,
+      "height": 2560,
+      "alt": null,
+      "driveId": "1tiFsGsieYDRJfxatwYbCEQtOxR-parfO"
+    },
+    {
+      "src": "/assets/projects/iaim-prendas/mockup-cortavientos.webp",
+      "srcSm": "/assets/projects/iaim-prendas/mockup-cortavientos-sm.webp",
+      "width": 1417,
+      "height": 2560,
+      "alt": null,
+      "driveId": "1yk98uuSHvszLdW_uyJgwPCq9PnjlP2OG"
+    }
+  ],
+  "video": null,
+  "externalUrl": null,
+  "source": "drive",
+  "notes": "Hallado en el Drive. No publicar hasta que Emmanuel confirme que es su trabajo y cómo presentarlo. Los mockups muestran el nombre IAIM y un teléfono/Instagram de terceros: no publicar esos datos sin permiso. No se confirma relación cliente."
+}

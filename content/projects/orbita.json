@@ -1,0 +1,40 @@
+{
+  "slug": "orbita",
+  "title": "ÓRBITA — SUBLIMACIÓN",
+  "categories": [
+    "textil"
+  ],
+  "services": [
+    "diseno-textil"
+  ],
+  "year": null,
+  "status": "draft-unconfirmed",
+  "published": false,
+  "featured": false,
+  "description": null,
+  "client": null,
+  "tools": [],
+  "cover": "/assets/projects/orbita/orbita-sublimacion-2.webp",
+  "gallery": [
+    {
+      "src": "/assets/projects/orbita/orbita-sublimacion-2.webp",
+      "srcSm": "/assets/projects/orbita/orbita-sublimacion-2-sm.webp",
+      "width": 1800,
+      "height": 1012,
+      "alt": null,
+      "driveId": "1sQuIJhCLadXBMBg27zDEiuBeo-_cL8QA"
+    },
+    {
+      "src": "/assets/projects/orbita/orbita-sublimacion-1.webp",
+      "srcSm": "/assets/projects/orbita/orbita-sublimacion-1-sm.webp",
+      "width": 1800,
+      "height": 1012,
+      "alt": null,
+      "driveId": "1ddld31G_vY_BVCrlVekqLXJ9VXo97IVC"
+    }
+  ],
+  "video": null,
+  "externalUrl": null,
+  "source": "drive",
+  "notes": "Hallado en el Drive. No publicar hasta que Emmanuel confirme que es su trabajo y cómo presentarlo."
+}

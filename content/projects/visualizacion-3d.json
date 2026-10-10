@@ -1,0 +1,28 @@
+{
+  "slug": "visualizacion-3d",
+  "legacySlugs": ["visualizacion-3d-restaurante"],
+  "title": "VISUALIZACIÓN 3D — CONCEPTO DE RESTAURANTE",
+  "year": 2024,
+  "sortOrder": 9,
+  "published": true,
+  "status": "confirmed",
+  "featured": false,
+  "grid": "square",
+  "cover": "/assets/projects/visualizacion-3d/cover.webp",
+  "coverAlt": "Render de un concepto de restaurante con paleta cálida, madera, paneles de color y área de servicio.",
+  "coverFit": "cover",
+  "categories": ["3d"],
+  "services": ["visualizacion-3d"],
+  "tags": ["SketchUp", "V-Ray", "Interiorismo"],
+  "description": "Modelado y renderizado de un concepto de interiorismo gastronómico: distribución de espacios, paleta cromática y ambientación, desarrollado en SketchUp y V-Ray para presentación de proyecto.",
+  "overview": "Propuesta conceptual de un espacio gastronómico mostrada mediante un modelo y vistas de visualización 3D. No se presenta como una obra construida.",
+  "tools": ["SketchUp", "V-Ray"],
+  "gallery": [
+    { "src": "/assets/projects/visualizacion-3d/gallery-01.webp", "alt": "Captura del modelo de restaurante en etapa de diseño tridimensional." },
+    { "src": "/assets/projects/visualizacion-3d/gallery-02.webp", "alt": "Vista renderizada del área de servicio y el comedor con iluminación cálida." },
+    { "src": "/assets/projects/visualizacion-3d/gallery-03.webp", "alt": "Otra vista del interior del restaurante, con mesas de comedor y revestimiento de madera." }
+  ],
+  "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/visualizacion-3d-restaurante",
+  "source": { "portfolio": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/visualizacion-3d-restaurante" },
+  "notes": "El paquete de imágenes etiquetado como restaurante en el sitio previo mostraba una ilustración y un vaso. Se excluyó; esta ficha usa el modelo y las vistas interiores que visualmente corresponden al proyecto conceptual de restaurante. Se conserva la nota de que no se presenta como obra construida."
+}

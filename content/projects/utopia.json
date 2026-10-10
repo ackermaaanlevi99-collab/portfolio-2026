@@ -1,0 +1,51 @@
+{
+  "slug": "utopia",
+  "legacySlugs": ["utopia-group-catalogo-textil"],
+  "title": "UTOPÍA GROUP — CATÁLOGO TEXTIL",
+  "year": 2026,
+  "sortOrder": 6,
+  "published": true,
+  "status": "confirmed",
+  "featured": true,
+  "grid": "square",
+  "cover": "/assets/projects/utopia/cover.webp",
+  "coverAlt": "Camiseta de béisbol Utopía Group fotografiada de frente, con wordmark oscuro y gráficos urbanos en blanco y negro.",
+  "coverFit": "cover",
+  "categories": ["textil"],
+  "services": ["diseno-textil"],
+  "tags": ["DTF", "Sublimación", "Serigrafía", "Catálogo"],
+  "description": "Diseño y preparación técnica de artes para el catálogo textil 2026 de Utopía Group: hoodies, camisas Oxford, chalecos, scrubs y uniformes deportivos, con acabados en DTF, vinil textil, serigrafía y sublimación.",
+  "overview": "La ficha publicada describe el catálogo y sus técnicas. Las dos fotografías verificadas en Drive muestran frente y dorso de una camiseta de béisbol Utopía; no se atribuyen volúmenes de producción, ventas ni resultados no documentados.",
+  "tools": [],
+  "storyEyebrow": "LECTURA DE LAS FUENTES DISPONIBLES",
+  "storyTitle": "Del catálogo digital a la camiseta documentada.",
+  "storyStages": [
+    {
+      "title": "DISEÑO DIGITAL",
+      "description": "La ficha del catálogo enumera hoodies, camisas Oxford, chalecos, scrubs y uniformes deportivos."
+    },
+    {
+      "title": "PRENDA",
+      "description": "La fotografía frontal verificada en Drive muestra una camiseta de béisbol Utopía Group.",
+      "image": { "src": "/assets/projects/utopia/cover.webp", "alt": "Vista frontal de la camiseta de béisbol Utopía Group documentada en Drive." }
+    },
+    {
+      "title": "PRODUCCIÓN",
+      "description": "La ficha enumera DTF, vinil textil, serigrafía y sublimación para el catálogo; no especifica cuál técnica se aplicó a la camiseta fotografiada."
+    },
+    {
+      "title": "RESULTADO",
+      "description": "Una segunda foto de Drive documenta el dorso de la camiseta; las fuentes no informan tiraje, venta ni cifras de entrega.",
+      "image": { "src": "/assets/projects/utopia/gallery-01.webp", "alt": "Dorso de la camiseta Utopía Group: nombre Emmanuel, número 15 y una ilustración urbana en blanco y negro." }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/assets/projects/utopia/gallery-01.webp",
+      "alt": "Dorso de la camiseta Utopía Group: nombre Emmanuel, número 15 y una ilustración urbana en blanco y negro."
+    }
+  ],
+  "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/utopia-group-catalogo-textil",
+  "source": { "portfolio": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/utopia-group-catalogo-textil" },
+  "notes": "El material heredado que mostraba señalética de Tu Sitio Waraira se descartó de esta ficha. El frontal y el dorso de la camiseta se identificaron visualmente en Drive bajo el nombre Utopia béisbol. Se citan técnicas del catálogo pero no se atribuye ninguna a la camiseta sin evidencia."
+}

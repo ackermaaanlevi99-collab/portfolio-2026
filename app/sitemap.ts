@@ -1,12 +1,18 @@
-import { MetadataRoute } from 'next';
-import portfolio from '@/content/portfolio.json';
+import type { MetadataRoute } from 'next';
+import { getPublishedProjects } from '@/lib/projects';
 import siteConfig from '@/config/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const projectUrls = portfolio.map((p) => ({
-    url: `${siteConfig.url}/proyectos/${p.slug}`,
-    lastModified: new Date(),
+  const root = { url: siteConfig.url, priority: 1, changeFrequency: 'monthly' as const };
+  const projects = getPublishedProjects().map((project) => ({
+    url: `${siteConfig.url}/proyectos/${project.slug}`,
+    changeFrequency: 'yearly' as const,
   }));
-
-  return [{ url: siteConfig.url, lastModified: new Date(), priority: 1 }, ...projectUrls];
+  return [
+    root,
+    { url: `${siteConfig.url}/proyectos`, changeFrequency: 'monthly' },
+    { url: `${siteConfig.url}/servicios`, changeFrequency: 'monthly' },
+    { url: `${siteConfig.url}/sobre-mi`, changeFrequency: 'monthly' },
+    ...projects,
+  ];
 }

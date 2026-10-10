@@ -1,78 +1,50 @@
-export interface HeroContent {
-  eyebrow: string;
-  title: string;
-  highlightWord?: string;
-  subtitle: string;
-  primaryButton: { label: string; href: string };
-  secondaryButton: { label: string; href: string };
-  scrollIndicator: string;
-  background: { type: string; image?: string; video?: string };
+export interface ProjectImage {
+  src: string;
+  alt: string;
+  caption?: string;
 }
 
-export interface Service {
-  id: string;
-  code: string;
+export interface StoryStage {
   title: string;
   description: string;
-  icon: string;
-  image?: string | null;
-  gif?: string | null;
-  button?: { label: string; href: string };
+  image?: ProjectImage;
 }
 
-export interface Project {
+export interface ProjectItem {
   slug: string;
-  name: string;
+  legacySlugs?: string[];
+  title: string;
   description: string;
-  category: string;
-  year: string;
+  overview?: string;
+  categories: string[];
+  services: string[];
+  year: number | null;
+  datePublished?: string;
   tags: string[];
-  thumbnail: string;
+  tools: string[];
   cover: string;
-  gallery: string[];
-  gif?: string | null;
-  video?: string | null;
+  coverAlt: string;
+  coverFit?: 'cover' | 'contain';
+  gallery: ProjectImage[];
+  sceneSequence?: ProjectImage[];
+  storyEyebrow?: string;
+  storyTitle?: string;
+  storyStages?: StoryStage[];
+  externalUrl?: string | null;
+  featured: boolean;
+  grid?: 'wide' | 'portrait' | 'square';
+}
+
+export interface ServiceItem {
+  id: string;
+  title: string;
+  shortTitle?: string;
+  description: string;
+  index: string;
 }
 
 export interface ExperienceItem {
-  role: string;
-  company: string;
   period: string;
-  bullets?: string[];
-}
-
-export interface AboutContent {
-  name: string;
   role: string;
-  story: string;
-  experience: ExperienceItem[];
-  skills: string[];
-  education?: { title: string; institution: string }[];
-}
-
-export interface Client {
-  name: string;
-  logo?: string | null;
-}
-
-export interface Testimonial {
-  quote: string;
-  name: string;
-  role: string;
-}
-
-export interface FAQItem {
-  question: string;
-  answer: string;
-}
-
-export interface ContactContent {
-  heading: string;
-  subheading: string;
-  email: string;
-  phone: string;
-  whatsappUrl: string;
-  behance: string;
-  location: string;
-  formOptions: { services: string[] };
+  org: string;
 }

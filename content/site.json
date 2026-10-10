@@ -1,0 +1,73 @@
+{
+  "brand": "Aranguibel Studio",
+  "person": "Emmanuel Aranguibel González",
+  "role": "Diseñador gráfico",
+  "locale": "es-VE",
+  "location": "Caracas, Venezuela",
+  "experienceYears": "3+",
+  "seo": {
+    "title": "Aranguibel Studio — Diseño Gráfico & Dirección Visual",
+    "description": "Portafolio de Emmanuel Aranguibel González, diseñador gráfico en Caracas, Venezuela. Identidad de marca, diseño publicitario, textil, ilustración y visualización 3D."
+  },
+  "hero": {
+    "eyebrow": "DISEÑADOR GRÁFICO · CARACAS, VE",
+    "title": "Diseño que deja marca.",
+    "support": "Identidad de marca, diseño publicitario y textil, ilustración y visualización 3D. Más de tres años convirtiendo ideas en sistemas visuales con carácter.",
+    "primaryLabel": "Explorar proyectos",
+    "secondaryLabel": "Hablemos",
+    "note": "Trabajo visual independiente · Caracas y remoto",
+    "scrollLabel": "Desliza para explorar"
+  },
+  "portfolio": {
+    "eyebrow": "TRABAJO SELECCIONADO / 2024—2026",
+    "title": "Proyectos con una identidad propia.",
+    "description": "Un archivo de marcas, piezas y exploraciones desarrolladas entre identidad, publicidad, textil e imagen."
+  },
+  "about": {
+    "title": "Diseño con intención. Hecho en Caracas.",
+    "text": "Soy Emmanuel, diseñador gráfico con experiencia en el área publicitaria y textil. He trabajado en piezas de gran formato y diseños para DTF, vinil textil, serigrafía y sublimación, cuidando cada detalle del proceso. También desarrollo propuestas de visualización y modelado 3D.",
+    "tools": [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "SketchUp",
+      "V-Ray",
+      "Twinmotion",
+      "IA aplicada al diseño"
+    ]
+  },
+  "experience": [
+    { "period": "2025", "role": "Diseño publicitario e impresión de gran formato", "org": "Graphic Public" },
+    { "period": "2025 — Actualidad", "role": "Diseño textil", "org": "Utopía Group" },
+    { "period": "2024", "role": "Diseño 3D y visualización", "org": "Sistema Teleférico Warairarepano" }
+  ],
+  "contact": {
+    "eyebrow": "SI TIENES UN PROYECTO EN MENTE",
+    "title": "Hablemos de lo que quieres construir.",
+    "description": "Escríbeme con una breve idea del proyecto y la revisamos.",
+    "email": "aranguibelgonzaleze@gmail.com",
+    "emailLabel": "Escribir un correo",
+    "whatsappUrl": "https://wa.me/584246112603",
+    "whatsappLabel": "Continuar por WhatsApp",
+    "availabilityNote": "Caracas, Venezuela · Proyectos remotos",
+    "form": {
+      "name": "contacto-portafolio",
+      "heading": "Cuéntame de tu proyecto",
+      "fields": [
+        { "name": "nombre", "label": "Nombre", "type": "text", "required": true, "maxLength": 100 },
+        { "name": "email", "label": "Email", "type": "email", "required": true, "maxLength": 254 },
+        { "name": "servicio", "label": "Tipo de proyecto", "type": "select", "required": true },
+        { "name": "mensaje", "label": "Mensaje", "type": "textarea", "required": true, "maxLength": 2400 }
+      ],
+      "submit": "ENVIAR PROYECTO"
+    }
+  },
+  "social": {
+    "behance": "https://www.behance.net/emmanuearangui",
+    "beacons": "https://beacons.ai/eagraphicdesigner"
+  },
+  "removed": [
+    "Testimonio de muestra, no verificable",
+    "Preguntas frecuentes incompletas o sin respuestas verificadas",
+    "Promesa de respuesta en menos de 24 horas"
+  ]
+}

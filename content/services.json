@@ -1,62 +1,8 @@
 [
-  {
-    "id": "publicitario",
-    "code": "PUB",
-    "title": "Diseño Publicitario",
-    "description": "Piezas gráficas para vallas, backings, rotulados e impresión de gran formato, adaptadas a cada soporte y pensadas para captar la atención donde más importa.",
-    "icon": "Megaphone",
-    "image": null,
-    "gif": null,
-    "button": { "label": "Cotizar", "href": "#contacto" }
-  },
-  {
-    "id": "textil",
-    "code": "TXT",
-    "title": "Diseño Textil",
-    "description": "Diseños para DTF, vinil textil, serigrafía y sublimación, cuidando cada detalle del proceso para asegurar acabados de alta calidad en cada prenda.",
-    "icon": "Shirt",
-    "image": null,
-    "gif": null,
-    "button": { "label": "Cotizar", "href": "#contacto" }
-  },
-  {
-    "id": "3d",
-    "code": "3D",
-    "title": "Visualización 3D",
-    "description": "Modelado y renderizado arquitectónico y de producto en SketchUp, V-Ray y Twinmotion para presentar tu proyecto antes de construirlo.",
-    "icon": "Box",
-    "image": null,
-    "gif": null,
-    "button": { "label": "Cotizar", "href": "#contacto" }
-  },
-  {
-    "id": "identidad",
-    "code": "BRD",
-    "title": "Identidad de Marca",
-    "description": "Logotipos y sistemas visuales coherentes —color, tipografía y aplicaciones— para que tu marca se reconozca al instante en cualquier soporte.",
-    "icon": "PenTool",
-    "image": null,
-    "gif": null,
-    "button": { "label": "Cotizar", "href": "#contacto" }
-  },
-  {
-    "id": "ilustracion",
-    "code": "ILU",
-    "title": "Ilustración",
-    "description": "Ilustración digital a medida para packaging, campañas publicitarias y contenido de marca, con un estilo propio y aplicable a distintos formatos.",
-    "icon": "Palette",
-    "image": null,
-    "gif": null,
-    "button": { "label": "Cotizar", "href": "#contacto" }
-  },
-  {
-    "id": "socialmedia",
-    "code": "SOC",
-    "title": "Diseño para Redes Sociales",
-    "description": "Contenido gráfico estratégico para que tu marca se vea consistente y profesional en cada plataforma, semana tras semana.",
-    "icon": "Share2",
-    "image": null,
-    "gif": null,
-    "button": { "label": "Cotizar", "href": "#contacto" }
-  }
+  {"id":"identidad-de-marca","title":"Identidad de marca","shortTitle":"Branding","description":"Conceptos e identidades visuales presentados en ANA VALDEZ y KALHUA.","index":"01"},
+  {"id":"diseno-textil","title":"Diseño textil y de prendas","shortTitle":"Textil","description":"Diseño para indumentaria, estampados y presentaciones de prendas.","index":"02"},
+  {"id":"diseno-publicitario","title":"Diseño publicitario","shortTitle":"Publicidad","description":"Piezas y aplicaciones gráficas de comunicación publicitaria.","index":"03"},
+  {"id":"visualizacion-3d","title":"Visualización 3D","shortTitle":"3D","description":"Propuestas de modelado y visualización de espacios en 3D.","index":"04"},
+  {"id":"ilustracion","title":"Ilustración","shortTitle":"Ilustración","description":"Ilustración y piezas gráficas presentes en proyectos de marca.","index":"05"},
+  {"id":"diseno-redes-sociales","title":"Diseño para redes sociales","shortTitle":"Redes","description":"Servicio conservado en el inventario; no se muestra hasta contar con un caso publicado y atribuible.","index":"06"}
 ]

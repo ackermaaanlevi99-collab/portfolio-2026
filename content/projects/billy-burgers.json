@@ -1,0 +1,28 @@
+{
+  "slug": "billy-burgers",
+  "legacySlugs": ["billy-burgers-food-truck"],
+  "title": "BILLY BURGER'S — DISEÑO DE FOOD TRUCK",
+  "year": 2025,
+  "sortOrder": 8,
+  "published": true,
+  "status": "confirmed",
+  "featured": false,
+  "grid": "wide",
+  "cover": "/assets/projects/billy-burgers/cover.webp",
+  "coverAlt": "Food truck Billy Burger's con su logotipo ilustrado aplicado en el lateral del vehículo.",
+  "coverFit": "cover",
+  "categories": ["publicidad", "ilustracion"],
+  "services": ["diseno-publicitario", "ilustracion"],
+  "tags": ["Branding", "Ilustración", "Wrap vehicular"],
+  "description": "Identidad visual y wrap completo para el food truck Billy Burger's: personaje de marca, iconografía y aplicación del diseño sobre el vehículo, desde la maqueta hasta la instalación final.",
+  "overview": "La galería muestra el personaje de Billy Burger's aplicado al vehículo, una vista de la propuesta del food truck y una fotografía exterior.",
+  "tools": [],
+  "gallery": [
+    { "src": "/assets/projects/billy-burgers/gallery-01.webp", "alt": "Detalle de la ilustración de marca y el wrap gráfico del food truck Billy Burger's." },
+    { "src": "/assets/projects/billy-burgers/gallery-02.webp", "alt": "Vista tridimensional de la propuesta del food truck Billy Burger's, con el menú y el personaje en el lateral." },
+    { "src": "/assets/projects/billy-burgers/gallery-03.webp", "alt": "Fotografía exterior del food truck Billy Burger's con el menú y el sistema gráfico aplicados." }
+  ],
+  "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/billy-burgers-food-truck",
+  "source": { "portfolio": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/billy-burgers-food-truck" },
+  "notes": "La ficha conserva el texto del sitio previo. Las fotos se reasignaron después de comprobar la marca Billy Burger's en el vehículo y en sus aplicaciones; no se añaden premios ni métricas."
+}

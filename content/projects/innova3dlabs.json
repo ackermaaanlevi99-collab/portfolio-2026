@@ -1,0 +1,64 @@
+{
+  "slug": "innova3dlabs",
+  "title": "SUBLIMACIÓN INNOVA3DLABS",
+  "categories": [
+    "textil"
+  ],
+  "services": [
+    "diseno-textil"
+  ],
+  "year": null,
+  "status": "draft-unconfirmed",
+  "published": false,
+  "featured": false,
+  "description": null,
+  "client": null,
+  "tools": [],
+  "cover": "/assets/projects/innova3dlabs/sublimacion-innova3dlabs.webp",
+  "gallery": [
+    {
+      "src": "/assets/projects/innova3dlabs/sublimacion-innova3dlabs.webp",
+      "srcSm": "/assets/projects/innova3dlabs/sublimacion-innova3dlabs-sm.webp",
+      "width": 1800,
+      "height": 1012,
+      "alt": null,
+      "driveId": "1Oqe5BISZr3W2lCasK2zi1N8NCiNbt-UF"
+    },
+    {
+      "src": "/assets/projects/innova3dlabs/mockup.webp",
+      "srcSm": "/assets/projects/innova3dlabs/mockup-sm.webp",
+      "width": 1800,
+      "height": 1012,
+      "alt": null,
+      "driveId": "1D_xHLSiG2lF5fvAHe5AsFf2UqfVh-Zbw"
+    },
+    {
+      "src": "/assets/projects/innova3dlabs/sublimacion-innova3dlabs-3.webp",
+      "srcSm": "/assets/projects/innova3dlabs/sublimacion-innova3dlabs-3-sm.webp",
+      "width": 1800,
+      "height": 1012,
+      "alt": null,
+      "driveId": "1SLE3ckSG2qDxeY_FzE2cJ09NVkAv-2G7"
+    },
+    {
+      "src": "/assets/projects/innova3dlabs/sublimacion-innova3dlabs2.webp",
+      "srcSm": "/assets/projects/innova3dlabs/sublimacion-innova3dlabs2-sm.webp",
+      "width": 1800,
+      "height": 1012,
+      "alt": null,
+      "driveId": "1SF8ys2nkQ2fjt718VbgnVif8I8ozDmdo"
+    },
+    {
+      "src": "/assets/projects/innova3dlabs/sublimacion-innova3dlabs-2.webp",
+      "srcSm": "/assets/projects/innova3dlabs/sublimacion-innova3dlabs-2-sm.webp",
+      "width": 1800,
+      "height": 1012,
+      "alt": null,
+      "driveId": "1dg3rdEd2VZJfznKZX3Q2yeRGShxWrNwP"
+    }
+  ],
+  "video": null,
+  "externalUrl": null,
+  "source": "drive",
+  "notes": "Hallado en el Drive. No publicar hasta que Emmanuel confirme que es su trabajo y cómo presentarlo. Fotos reales de producción. El archivo 'Mockup.jpg' se agrupó aquí por lectura visual: confirmar."
+}
