@@ -1,0 +1,32 @@
+{
+  "slug": "ucv-futbol",
+  "title": "UNIFORME DE FÚTBOL UCV",
+  "categories": [
+    "textil"
+  ],
+  "services": [
+    "diseno-textil"
+  ],
+  "year": null,
+  "status": "draft-unconfirmed",
+  "published": false,
+  "featured": false,
+  "description": null,
+  "client": null,
+  "tools": [],
+  "cover": "/assets/projects/ucv-futbol/ucv-futbol-mockup.webp",
+  "gallery": [
+    {
+      "src": "/assets/projects/ucv-futbol/ucv-futbol-mockup.webp",
+      "srcSm": "/assets/projects/ucv-futbol/ucv-futbol-mockup-sm.webp",
+      "width": 1600,
+      "height": 1600,
+      "alt": null,
+      "driveId": "1NiE4Bl3ctpGS5gSa5Hei-4eHlr2f5vo7"
+    }
+  ],
+  "video": null,
+  "externalUrl": null,
+  "source": "drive",
+  "notes": "Hallado en el Drive. No publicar hasta que Emmanuel confirme que es su trabajo y cómo presentarlo."
+}

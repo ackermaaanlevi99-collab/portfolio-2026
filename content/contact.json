@@ -1,20 +1,18 @@
 {
-  "heading": "Hablemos de tu próximo proyecto",
-  "subheading": "Cuéntame qué necesitas y te respondo en menos de 24 horas.",
   "email": "aranguibelgonzaleze@gmail.com",
-  "phone": "+58 424-611-2603",
+  "whatsapp": "+58 424-611-2603",
   "whatsappUrl": "https://wa.me/584246112603",
-  "behance": "https://www.behance.net/gallery/243101687/2026",
-  "location": "Caracas, Venezuela",
-  "formOptions": {
-    "services": [
-      "Diseño Publicitario",
-      "Diseño Textil",
-      "Visualización 3D",
-      "Identidad de Marca",
-      "Ilustración",
-      "Diseño para Redes Sociales",
-      "Otro"
-    ]
+  "behance": "https://www.behance.net/emmanuearangui",
+  "beacons": "https://beacons.ai/eagraphicdesigner",
+  "form": {
+    "name": "contacto-portafolio",
+    "heading": "Cuéntame de tu proyecto",
+    "fields": [
+      { "name": "nombre", "label": "Nombre", "type": "text", "required": true, "maxLength": 100 },
+      { "name": "email", "label": "Email", "type": "email", "required": true, "maxLength": 254 },
+      { "name": "servicio", "label": "Tipo de proyecto", "type": "select", "required": true },
+      { "name": "mensaje", "label": "Mensaje", "type": "textarea", "required": true, "maxLength": 2400 }
+    ],
+    "submit": "ENVIAR PROYECTO"
   }
 }

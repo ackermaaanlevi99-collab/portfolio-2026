@@ -1,0 +1,49 @@
+{
+  "slug": "usb",
+  "legacySlugs": ["diseno-de-prendas-para-la-usb"],
+  "title": "DISEÑO DE PRENDAS PARA LA USB",
+  "sortOrder": 4,
+  "published": true,
+  "status": "confirmed",
+  "featured": true,
+  "grid": "portrait",
+  "cover": "/assets/projects/usb/cover.webp",
+  "coverAlt": "Vista de una prenda del proyecto Diseño de prendas para la USB, tomada de la galería original.",
+  "coverFit": "cover",
+  "categories": ["textil"],
+  "services": ["diseno-textil"],
+  "tags": ["Diseño de prendas", "Textil", "USB", "DTF", "Bordado"],
+  "description": "Proyecto de diseño y desarrollo de una línea de prendas personalizadas en colaboración entre Utopía y la Universidad Simón Bolívar (USB).",
+  "overview": "La publicación de Behance describe una propuesta de prendas que incluye hoodies, camisetas, gorras y chaquetas, con técnicas DTF y bordado. El material consultado no especifica cantidades de fabricación.",
+  "tools": [],
+  "storyEyebrow": "LECTURA DE LA PUBLICACIÓN",
+  "storyTitle": "Una propuesta textil, en cuatro momentos.",
+  "storyStages": [
+    {
+      "title": "DISEÑO DIGITAL",
+      "description": "Behance presenta la línea de prendas personalizadas desarrollada en colaboración entre Utopía y la USB.",
+      "image": { "src": "/assets/projects/usb/cover.webp", "alt": "Arte de portada publicado para las prendas de la USB." }
+    },
+    {
+      "title": "PRENDA",
+      "description": "La publicación incluye hoodies, camisetas, gorras y chaquetas dentro de sus propuestas visibles.",
+      "image": { "src": "/assets/projects/usb/gallery-01.webp", "alt": "Aplicación de una propuesta de diseño sobre una prenda del proyecto USB." }
+    },
+    {
+      "title": "PRODUCCIÓN",
+      "description": "La ficha cita DTF y bordado, sin asignar un proceso concreto a cada pieza mostrada ni publicar cantidades fabricadas."
+    },
+    {
+      "title": "RESULTADO",
+      "description": "La galería documenta una presentación digital de las propuestas; no indica volúmenes de fabricación ni cifras comerciales.",
+      "image": { "src": "/assets/projects/usb/gallery-02.webp", "alt": "Segunda aplicación de prenda mostrada en la publicación de la USB." }
+    }
+  ],
+  "gallery": [
+    { "src": "/assets/projects/usb/gallery-01.webp", "alt": "Composición adicional publicada en el proyecto de prendas USB." },
+    { "src": "/assets/projects/usb/gallery-02.webp", "alt": "Vista complementaria de las prendas mostradas en el proyecto USB." }
+  ],
+  "externalUrl": "https://www.behance.net/gallery/249460231/Diseno-de-prendas-para-la-USB",
+  "source": { "behance": "https://www.behance.net/gallery/249460231/Diseno-de-prendas-para-la-USB" },
+  "notes": "La publicación de Behance confirma una colaboración de diseño entre Utopía y la USB; no se le atribuye adjudicación, aprobación institucional ni fabricación en serie sin evidencia. No se asigna año porque no se encontró una fecha publicable en los metadatos disponibles."
+}

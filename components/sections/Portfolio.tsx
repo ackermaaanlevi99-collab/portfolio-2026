@@ -1,49 +1,30 @@
-'use client';
-
-import { useState, useMemo } from 'react';
-import SectionHeading from '@/components/ui/SectionHeading';
-import ProjectCard from '@/components/ui/ProjectCard';
-import AnimatedSection from '@/components/ui/AnimatedSection';
-import portfolio from '@/content/portfolio.json';
+import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
+import ProjectGrid from '@/components/sections/ProjectGrid';
+import { getPublishedProjects } from '@/lib/projects';
+import site from '@/content/site.json';
 
 export default function Portfolio() {
-  const categories = useMemo(() => ['Todos', ...Array.from(new Set(portfolio.map((p) => p.category)))], []);
-  const [active, setActive] = useState('Todos');
-
-  const filtered = active === 'Todos' ? portfolio : portfolio.filter((p) => p.category === active);
+  const projects = getPublishedProjects();
 
   return (
-    <section id="portfolio" className="relative px-6 py-32 md:px-10">
-      <div className="mx-auto max-w-7xl">
-        <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
-          <SectionHeading
-            eyebrow="Portfolio"
-            title="Proyectos que hablan por sí solos"
-            subtitle="Una selección de trabajos en publicidad, diseño textil, branding y visualización 3D."
-          />
-          <div className="flex flex-wrap gap-2">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActive(cat)}
-                className={`rounded-full border px-4 py-2 font-mono text-[11px] uppercase tracking-wide transition ${
-                  active === cat
-                    ? 'border-primary bg-primary text-white'
-                    : 'border-border text-textSecondary hover:border-primary hover:text-primary'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+    <section id="portfolio" className="portfolio-section section-space section-rule" aria-labelledby="portfolio-title">
+      <div className="page-container">
+        <header className="section-intro">
+          <div>
+            <p className="eyebrow">{site.portfolio.eyebrow}</p>
+            <h2 id="portfolio-title">{site.portfolio.title}</h2>
           </div>
-        </div>
-
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((project, i) => (
-            <AnimatedSection key={project.slug} delay={i * 0.06}>
-              <ProjectCard {...project} />
-            </AnimatedSection>
-          ))}
+          <div>
+            <p className="section-intro__aside">{site.portfolio.description}</p>
+            <p className="pixel-label" style={{ marginTop: '1.2rem', color: 'var(--text-3)' }}>
+              {String(projects.length).padStart(2, '0')} PIEZAS / SELECCIÓN ACTUAL
+            </p>
+          </div>
+        </header>
+        <ProjectGrid projects={projects} />
+        <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '2rem' }}>
+          <Link className="text-link" href="/proyectos">Explorar el archivo completo <ArrowUpRight size={15} aria-hidden="true" /></Link>
         </div>
       </div>
     </section>

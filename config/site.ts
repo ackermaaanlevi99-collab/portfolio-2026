@@ -1,5 +1,7 @@
+const configuredUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://emmanuelaranguibelgraphicdesigner.netlify.app';
+
 const siteConfig = {
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://tudominio.com',
+  url: new URL(configuredUrl).origin,
 };
 
 export default siteConfig;

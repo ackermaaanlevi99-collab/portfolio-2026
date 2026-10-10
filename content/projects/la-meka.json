@@ -1,0 +1,34 @@
+{
+  "slug": "la-meka",
+  "title": "LA MEKA — ESTAMPADO",
+  "categories": [
+    "textil",
+    "ilustracion"
+  ],
+  "services": [
+    "diseno-textil",
+    "ilustracion"
+  ],
+  "year": null,
+  "status": "draft-unconfirmed",
+  "published": false,
+  "featured": false,
+  "description": null,
+  "client": null,
+  "tools": [],
+  "cover": "/assets/projects/la-meka/a2e4b734-c119-4a7a-b05d-7df56b9df21f.webp",
+  "gallery": [
+    {
+      "src": "/assets/projects/la-meka/a2e4b734-c119-4a7a-b05d-7df56b9df21f.webp",
+      "srcSm": "/assets/projects/la-meka/a2e4b734-c119-4a7a-b05d-7df56b9df21f-sm.webp",
+      "width": 876,
+      "height": 936,
+      "alt": null,
+      "driveId": "10fNFEZ6iGm_DRWw40xkQpcnz0dCqD2Bu"
+    }
+  ],
+  "video": null,
+  "externalUrl": null,
+  "source": "drive",
+  "notes": "Hallado en el Drive. No publicar hasta que Emmanuel confirme que es su trabajo y cómo presentarlo."
+}

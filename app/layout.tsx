@@ -1,102 +1,69 @@
-import type { Metadata } from "next";
-import { Big_Shoulders_Display } from "next/font/google";
+import type { Metadata, Viewport } from 'next';
+import { Inter, JetBrains_Mono, Silkscreen, Space_Grotesk } from 'next/font/google';
+import './globals.css';
+import SmoothScroll from '@/components/layout/SmoothScroll';
+import Cursor from '@/components/layout/Cursor';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import Transition from '@/components/layout/Transition';
+import siteData from '@/content/site.json';
+import siteConfig from '@/config/site';
 
-const bigShoulders = Big_Shoulders_Display({
-  subsets: ["latin"],
-});
-const bigShoulders = Big_Shoulders_Display({
-  subsets: ["latin"],
-});
-import "./globals.css";
-import SmoothScroll from "@/components/layout/SmoothScroll";
-import Cursor from "@/components/layout/Cursor";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import Transition from "@/components/layout/Transition";
-import texts from "@/content/texts.json";
-import contact from "@/content/contact.json";
-import siteConfig from "@/config/site";
+const display = Space_Grotesk({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-display', display: 'swap' });
+const body = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-body', display: 'swap' });
+const mono = JetBrains_Mono({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-mono', display: 'swap' });
+const pixel = Silkscreen({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-pixel', display: 'swap' });
 
-const display = Big_Shoulders_Display({
-  subsets: ["latin"],
-  weight: ["600", "700", "800", "900"],
-  variable: "--font-display",
-  display: "swap",
-});
+const previewBuild = process.env.NODE_ENV !== 'production'
+  || process.env.VERCEL_ENV === 'preview'
+  || ['deploy-preview', 'branch-deploy'].includes(process.env.CONTEXT ?? '');
 
-const body = IBM_Plex_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-body",
-  display: "swap",
-});
-
-const mono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-mono",
-  display: "swap",
-});
+export const viewport: Viewport = { themeColor: '#0A0A0A', colorScheme: 'dark' };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: {
-    default: texts.meta.titleDefault,
-    template: texts.meta.titleTemplate,
-  },
-  description: texts.meta.description,
-  keywords: texts.meta.keywords,
+  title: { default: siteData.seo.title, template: '%s | Aranguibel Studio' },
+  description: siteData.seo.description,
+  authors: [{ name: siteData.person }],
+  creator: siteData.person,
+  keywords: ['diseño gráfico', 'branding', 'identidad visual', 'diseño publicitario', 'diseño textil', 'ilustración', 'visualización 3D', 'Caracas', 'Venezuela'],
   openGraph: {
-    title: texts.meta.titleDefault,
-    description: texts.meta.description,
+    title: siteData.seo.title,
+    description: siteData.seo.description,
     url: siteConfig.url,
-    siteName: texts.brand.name,
-    locale: "es_VE",
-    type: "website",
+    siteName: siteData.brand,
+    locale: 'es_VE',
+    type: 'website',
+    images: [{ url: '/assets/projects/portfolio-2026/cover.webp', alt: 'Pieza gráfica verde de la colección de trabajo 2026 de Emmanuel Aranguibel González' }],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: texts.meta.titleDefault,
-    description: texts.meta.description,
-  },
+  twitter: { card: 'summary_large_image', title: siteData.seo.title, description: siteData.seo.description, images: ['/assets/projects/portfolio-2026/cover.webp'] },
+  alternates: { canonical: siteConfig.url },
+  ...(previewBuild ? { robots: { index: false, follow: false, googleBot: { index: false, follow: false } } } : {}),
+  icons: { icon: '/images/logo.svg' },
 };
 
 const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: texts.brand.name,
-  description: texts.meta.description,
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: siteData.person,
+  jobTitle: siteData.role,
   url: siteConfig.url,
-  email: contact.email,
-  areaServed: "VE",
-  sameAs: [contact.behance],
+  email: siteData.contact.email,
+  homeLocation: { '@type': 'Place', name: siteData.location },
+  brand: { '@type': 'Brand', name: siteData.brand },
+  sameAs: [siteData.social.behance, siteData.social.beacons],
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="es"
-      className={`${display.variable} ${body.variable} ${mono.variable}`}
-    >
-      <body className="overflow-x-hidden font-body antialiased">
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <a href="#main-content" className="skip-link">
-          Saltar al contenido principal
-        </a>
+    <html lang="es" className={`${display.variable} ${body.variable} ${mono.variable} ${pixel.variable}`}>
+      <body className="antialiased">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <a href="#main-content" className="skip-link">Saltar al contenido principal</a>
         <SmoothScroll>
           <Cursor />
           <Navbar />
-          <Transition>
-            <main id="main-content">{children}</main>
-          </Transition>
+          <Transition><main id="main-content">{children}</main></Transition>
           <Footer />
         </SmoothScroll>
       </body>

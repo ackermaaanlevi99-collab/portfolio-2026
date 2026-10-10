@@ -1,87 +1,79 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Image from 'next/image';
-import { AnimatePresence, motion } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import type { ProjectImage } from '@/types/content';
 
 interface GalleryProps {
-  images: string[];
-  alt: string;
+  images: ProjectImage[];
+  title: string;
 }
 
-export default function Gallery({ images, alt }: GalleryProps) {
+export default function Gallery({ images, title }: GalleryProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const openerRef = useRef<HTMLButtonElement>(null);
+
+  function openImage(index: number, event: React.MouseEvent<HTMLButtonElement>) {
+    openerRef.current = event.currentTarget;
+    setActiveIndex(index);
+    dialogRef.current?.showModal();
+  }
+  function close() {
+    if (dialogRef.current?.open) dialogRef.current.close();
+    setActiveIndex(null);
+  }
+  function changeImage(index: number) {
+    setActiveIndex(Math.max(0, Math.min(images.length - 1, index)));
+  }
+
+  const currentImage = activeIndex === null ? null : images[activeIndex];
 
   return (
     <>
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-        {images.map((src, i) => (
-          <button
-            key={src}
-            onClick={() => setActiveIndex(i)}
-            className="relative aspect-square overflow-hidden rounded-2xl border border-border"
-            data-cursor-hover
-          >
-            <Image
-              src={src}
-              alt={`${alt} ${i + 1}`}
-              fill
-              className="object-cover transition duration-500 hover:scale-105"
-              sizes="33vw"
-            />
-          </button>
+      <div className="project-gallery__grid" role="list" aria-label={`Galería de ${title}`}>
+        {images.map((image, index) => (
+          <figure className="project-gallery__item" key={`${image.src}-${index}`} role="listitem">
+            <button
+              ref={index === activeIndex ? openerRef : undefined}
+              type="button"
+              onClick={(event) => openImage(index, event)}
+              aria-label={`Abrir imagen ${index + 1} de ${images.length}: ${image.alt}`}
+            >
+              <Image src={image.src} alt={image.alt} fill sizes="(max-width: 760px) 94vw, 48vw" />
+            </button>
+            {image.caption && <figcaption className="sr-only">{image.caption}</figcaption>}
+          </figure>
         ))}
       </div>
-
-      <AnimatePresence>
-        {activeIndex !== null && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[90] flex items-center justify-center bg-secondary/95 p-6"
-            onClick={() => setActiveIndex(null)}
-          >
-            <button className="absolute right-6 top-6 text-background" onClick={() => setActiveIndex(null)} aria-label="Cerrar">
-              <X size={28} />
-            </button>
-            {activeIndex > 0 && (
-              <button
-                className="absolute left-4 text-background md:left-10"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setActiveIndex(activeIndex - 1);
-                }}
-                aria-label="Anterior"
-              >
-                <ChevronLeft size={32} />
-              </button>
-            )}
-            {activeIndex < images.length - 1 && (
-              <button
-                className="absolute right-4 text-background md:right-10"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setActiveIndex(activeIndex + 1);
-                }}
-                aria-label="Siguiente"
-              >
-                <ChevronRight size={32} />
-              </button>
-            )}
-            <motion.div
-              key={activeIndex}
-              initial={{ scale: 0.95, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              className="relative h-[80vh] w-full max-w-4xl"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Image src={images[activeIndex]} alt={`${alt} ${activeIndex + 1}`} fill className="object-contain" />
-            </motion.div>
-          </motion.div>
+      <dialog
+        ref={dialogRef}
+        className="gallery-dialog"
+        aria-label={`Galería ampliada: ${title}`}
+        onClose={() => { setActiveIndex(null); openerRef.current?.focus(); }}
+        onCancel={() => setActiveIndex(null)}
+        onClick={(event) => { if (event.target === event.currentTarget) close(); }}
+        onKeyDown={(event) => {
+          if (event.key === 'ArrowLeft' && activeIndex !== null && activeIndex > 0) changeImage(activeIndex - 1);
+          if (event.key === 'ArrowRight' && activeIndex !== null && activeIndex < images.length - 1) changeImage(activeIndex + 1);
+        }}
+      >
+        {currentImage && activeIndex !== null && (
+          <div className="gallery-dialog__frame">
+            <button type="button" className="gallery-dialog__close" onClick={close} aria-label="Cerrar imagen ampliada"><X size={22} aria-hidden="true" /></button>
+            <figure className="gallery-dialog__image">
+              <Image src={currentImage.src} alt={currentImage.alt} fill sizes="95vw" priority />
+              {currentImage.caption && <figcaption className="gallery-dialog__caption">{currentImage.caption}</figcaption>}
+            </figure>
+            <div className="gallery-dialog__controls" aria-label="Controles de la galería">
+              <button type="button" onClick={() => changeImage(activeIndex - 1)} disabled={activeIndex === 0} aria-label="Imagen anterior"><ChevronLeft aria-hidden="true" /></button>
+              <span className="gallery-dialog__count" aria-live="polite" aria-atomic="true">{activeIndex + 1} / {images.length}</span>
+              <button type="button" onClick={() => changeImage(activeIndex + 1)} disabled={activeIndex === images.length - 1} aria-label="Imagen siguiente"><ChevronRight aria-hidden="true" /></button>
+            </div>
+          </div>
         )}
-      </AnimatePresence>
+      </dialog>
     </>
   );
 }

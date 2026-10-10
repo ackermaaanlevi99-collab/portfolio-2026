@@ -1,0 +1,28 @@
+{
+  "slug": "tu-sitio-waraira",
+  "title": "TU SITIO WARAIRA — IDENTIDAD Y SEÑALÉTICA",
+  "year": 2026,
+  "sortOrder": 7,
+  "published": true,
+  "status": "confirmed",
+  "featured": false,
+  "grid": "wide",
+  "cover": "/assets/projects/tu-sitio-waraira/cover.webp",
+  "coverAlt": "Señalética de fachada con el nombre Tu Sitio Waraira y motivos ilustrados de alimentos.",
+  "coverFit": "cover",
+  "categories": ["publicidad"],
+  "services": ["diseno-publicitario"],
+  "tags": ["Rotulación", "Vinil", "Backing", "Gran formato"],
+  "description": "Diseño y desarrollo de rotulación comercial para la cafetería Tu Sitio Waraira: backings iluminados, vinil de vitrina y señalética interior, preparados para impresión y montaje en gran formato.",
+  "overview": "El caso reúne aplicaciones de fachada, vidrieras y señalética de Tu Sitio Waraira. Las fotografías se seleccionaron por el nombre y el sistema gráfico visibles en sus rótulos.",
+  "tools": [],
+  "gallery": [
+    { "src": "/assets/projects/tu-sitio-waraira/gallery-01.webp", "alt": "Paneles de señalización con la marca Tu Sitio Waraira antes de su instalación." },
+    { "src": "/assets/projects/tu-sitio-waraira/gallery-02.webp", "alt": "Aplicación de la identidad ilustrada de Tu Sitio Waraira en los ventanales de la cafetería." },
+    { "src": "/assets/projects/tu-sitio-waraira/gallery-03.webp", "alt": "Vista exterior de la cafetería Tu Sitio Waraira con su gráfica aplicada a la fachada." },
+    { "src": "/assets/projects/tu-sitio-waraira/gallery-04.webp", "alt": "Detalle de vinil impreso con el usuario social de Tu Sitio Waraira." }
+  ],
+  "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/tu-sitio-waraira",
+  "source": { "portfolio": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/tu-sitio-waraira" },
+  "notes": "El paquete etiquetado como Utopía en el sitio anterior contenía texto y piezas visuales de Tu Sitio Waraira; se corrigió la asociación a partir de la marca que aparece impresa en las señales. No se añaden resultados de ventas o métricas de instalación."
+}
