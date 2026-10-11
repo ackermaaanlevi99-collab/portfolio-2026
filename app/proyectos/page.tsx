@@ -20,7 +20,7 @@ export default function ProjectsPage() {
         <h1 id="archive-title">Proyectos<br />publicados.</h1>
         <p>{site.portfolio.description} {projects.length} proyectos seleccionados, vinculados con sus fuentes y fichas de origen.</p>
       </header>
-      <ProjectGrid projects={projects} />
+      <ProjectGrid projects={projects} eagerFirstCard />
     </section>
   );
 }

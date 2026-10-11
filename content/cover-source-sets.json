@@ -1,0 +1,208 @@
+{
+  "ana-valdez": [
+    {
+      "src": "/assets/projects/ana-valdez/scenes/scene-01-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/assets/projects/ana-valdez/scenes/scene-01-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/assets/projects/ana-valdez/scenes/scene-01-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/assets/projects/ana-valdez/scenes/scene-01.webp",
+      "width": 900
+    }
+  ],
+  "billy-burgers": [
+    {
+      "src": "/assets/projects/billy-burgers/cover-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/assets/projects/billy-burgers/cover-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/assets/projects/billy-burgers/cover-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/assets/projects/billy-burgers/cover-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/projects/billy-burgers/cover-1280.webp",
+      "width": 1280
+    },
+    {
+      "src": "/assets/projects/billy-burgers/cover.webp",
+      "width": 1400
+    }
+  ],
+  "kalhua": [
+    {
+      "src": "/assets/projects/kalhua/cover-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/assets/projects/kalhua/cover.webp",
+      "width": 478
+    }
+  ],
+  "portfolio-2026": [
+    {
+      "src": "/assets/projects/portfolio-2026/cover-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/assets/projects/portfolio-2026/cover-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/assets/projects/portfolio-2026/cover-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/assets/projects/portfolio-2026/cover-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/projects/portfolio-2026/cover-1280.webp",
+      "width": 1280
+    },
+    {
+      "src": "/assets/projects/portfolio-2026/cover.webp",
+      "width": 1400
+    }
+  ],
+  "tu-sitio-waraira": [
+    {
+      "src": "/assets/projects/tu-sitio-waraira/cover-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/assets/projects/tu-sitio-waraira/cover-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/assets/projects/tu-sitio-waraira/cover-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/assets/projects/tu-sitio-waraira/cover-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/projects/tu-sitio-waraira/cover-1280.webp",
+      "width": 1280
+    },
+    {
+      "src": "/assets/projects/tu-sitio-waraira/cover.webp",
+      "width": 1400
+    }
+  ],
+  "usb": [
+    {
+      "src": "/assets/projects/usb/cover-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/assets/projects/usb/cover-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/assets/projects/usb/cover-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/assets/projects/usb/cover-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/projects/usb/cover-1280.webp",
+      "width": 1280
+    },
+    {
+      "src": "/assets/projects/usb/cover.webp",
+      "width": 1400
+    }
+  ],
+  "utopia": [
+    {
+      "src": "/assets/projects/utopia/cover-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/assets/projects/utopia/cover-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/assets/projects/utopia/cover-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/assets/projects/utopia/cover-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/projects/utopia/cover.webp",
+      "width": 1200
+    }
+  ],
+  "vintage-creation": [
+    {
+      "src": "/assets/projects/vintage-creation/gallery-01-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/assets/projects/vintage-creation/gallery-01-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/assets/projects/vintage-creation/gallery-01-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/assets/projects/vintage-creation/gallery-01-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/projects/vintage-creation/gallery-01-1280.webp",
+      "width": 1280
+    },
+    {
+      "src": "/assets/projects/vintage-creation/gallery-01.webp",
+      "width": 1400
+    }
+  ],
+  "visualizacion-3d": [
+    {
+      "src": "/assets/projects/visualizacion-3d/cover-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/assets/projects/visualizacion-3d/cover-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/assets/projects/visualizacion-3d/cover-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/assets/projects/visualizacion-3d/cover-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/projects/visualizacion-3d/cover-1280.webp",
+      "width": 1280
+    },
+    {
+      "src": "/assets/projects/visualizacion-3d/cover.webp",
+      "width": 1400
+    }
+  ]
+}

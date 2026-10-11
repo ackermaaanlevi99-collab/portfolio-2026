@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import CTA from '@/components/ui/CTA';
+import HeroPortal from '@/components/sections/HeroPortal';
 import { getPublishedProjects } from '@/lib/projects';
 import site from '@/content/site.json';
 
@@ -21,11 +22,14 @@ export default function Hero() {
             <span>Diseñador gráfico</span><span>Caracas, Venezuela</span><span>{site.experienceYears} años</span>
           </div>
         </div>
-        <div className="hero__copy">
-          <p className="hero__summary">Diseño que deja marca. {site.hero.support}</p>
-          <div className="cta-row">
-            <CTA href="#portfolio" label={site.hero.primaryLabel} icon={false} />
-            <CTA href="#contacto" label={site.hero.secondaryLabel} variant="secondary" />
+        <div className="hero__visual-column">
+          <HeroPortal cover={featured.cover} />
+          <div className="hero__copy">
+            <p className="hero__summary">Diseño que deja marca. {site.hero.support}</p>
+            <div className="cta-row">
+              <CTA href="#portfolio" label={site.hero.primaryLabel} icon={false} />
+              <CTA href="#contacto" label={site.hero.secondaryLabel} variant="secondary" />
+            </div>
           </div>
         </div>
       </div>
@@ -36,7 +40,7 @@ export default function Hero() {
             src={featured.cover}
             alt={featured.coverAlt}
             fill
-            priority
+            loading="lazy"
             sizes="(max-width: 760px) 100vw, 92vw"
             style={{ objectFit: featured.coverFit === 'contain' ? 'contain' : 'cover' }}
           />

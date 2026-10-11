@@ -6,9 +6,11 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourcesDir = path.join(root, 'content', 'projects');
 const publicDir = path.join(root, 'public');
 const orderPath = path.join(root, 'content', 'portfolio.json');
+const coverSourcesPath = path.join(root, 'content', 'cover-source-sets.json');
 const outputPath = path.join(root, 'content', 'portfolio.generated.json');
 const readJson = async (file) => JSON.parse(await readFile(file, 'utf8'));
 const order = await readJson(orderPath);
+const coverSourceSets = await readJson(coverSourcesPath);
 
 if (!Array.isArray(order) || order.some((slug) => typeof slug !== 'string')) {
   throw new Error('content/portfolio.json debe ser una lista ordenada de slugs.');
@@ -53,6 +55,17 @@ for (const project of published) {
   if (!Array.isArray(project.gallery)) {
     throw new Error(`La galería de ${project.slug} debe ser un arreglo.`);
   }
+  const coverSources = coverSourceSets[project.slug];
+  if (!Array.isArray(coverSources) || !coverSources.some(({ src }) => src === project.cover)) {
+    throw new Error(`La portada de ${project.slug} requiere un conjunto responsive que incluya el original.`);
+  }
+  for (const source of coverSources) {
+    if (!source || typeof source.src !== 'string' || !Number.isInteger(source.width) || source.width < 1
+      || !source.src.startsWith('/assets/projects/') || source.src.includes('..')) {
+      throw new Error(`Fuente responsive inválida en la portada de ${project.slug}.`);
+    }
+    mediaPaths.add(path.join(publicDir, source.src.slice(1)));
+  }
   for (const image of project.gallery) {
     if (!image.src || !image.alt) {
       throw new Error(`Cada imagen de la galería ${project.slug} requiere src y texto alternativo.`);
@@ -91,7 +104,7 @@ for (const file of mediaPaths) {
 }
 
 const output = published.map((project) => {
-  const publicProject = { ...project };
+  const publicProject = { ...project, coverSources: coverSourceSets[project.slug] };
   for (const privateKey of ['published', 'status', 'source', 'notes', 'sortOrder', 'sceneCount', 'experience']) {
     delete publicProject[privateKey];
   }
