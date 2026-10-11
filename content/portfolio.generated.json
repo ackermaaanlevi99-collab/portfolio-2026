@@ -31,6 +31,24 @@
     ],
     "gallery": [],
     "externalUrl": "https://www.behance.net/gallery/254711301/ANA-VALDEZ-BRANDING",
+    "coverSources": [
+      {
+        "src": "/assets/projects/ana-valdez/scenes/scene-01-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/assets/projects/ana-valdez/scenes/scene-01-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/projects/ana-valdez/scenes/scene-01-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/projects/ana-valdez/scenes/scene-01.webp",
+        "width": 900
+      }
+    ],
     "sceneSequence": [
       {
         "src": "/assets/projects/ana-valdez/scenes/scene-01.webp",
@@ -135,7 +153,33 @@
         "alt": "Tercera pieza visual publicada dentro de la galería 2026."
       }
     ],
-    "externalUrl": "https://www.behance.net/gallery/243101687/2026"
+    "externalUrl": "https://www.behance.net/gallery/243101687/2026",
+    "coverSources": [
+      {
+        "src": "/assets/projects/portfolio-2026/cover-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/cover-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/cover-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/cover-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/cover-1280.webp",
+        "width": 1280
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/cover.webp",
+        "width": 1400
+      }
+    ]
   },
   {
     "slug": "kalhua",
@@ -170,7 +214,17 @@
         "alt": "Detalle visual del proyecto KALHUA — BRANDING, publicado en Behance."
       }
     ],
-    "externalUrl": "https://www.behance.net/gallery/253994745/KALHUA-BRANDING"
+    "externalUrl": "https://www.behance.net/gallery/253994745/KALHUA-BRANDING",
+    "coverSources": [
+      {
+        "src": "/assets/projects/kalhua/cover-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/assets/projects/kalhua/cover.webp",
+        "width": 478
+      }
+    ]
   },
   {
     "slug": "usb",
@@ -241,7 +295,33 @@
         "alt": "Vista complementaria de las prendas mostradas en el proyecto USB."
       }
     ],
-    "externalUrl": "https://www.behance.net/gallery/249460231/Diseno-de-prendas-para-la-USB"
+    "externalUrl": "https://www.behance.net/gallery/249460231/Diseno-de-prendas-para-la-USB",
+    "coverSources": [
+      {
+        "src": "/assets/projects/usb/cover-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/assets/projects/usb/cover-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/projects/usb/cover-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/projects/usb/cover-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/projects/usb/cover-1280.webp",
+        "width": 1280
+      },
+      {
+        "src": "/assets/projects/usb/cover.webp",
+        "width": 1400
+      }
+    ]
   },
   {
     "slug": "utopia",
@@ -304,7 +384,29 @@
         "alt": "Dorso de la camiseta Utopía Group: nombre Emmanuel, número 15 y una ilustración urbana en blanco y negro."
       }
     ],
-    "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/utopia-group-catalogo-textil"
+    "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/utopia-group-catalogo-textil",
+    "coverSources": [
+      {
+        "src": "/assets/projects/utopia/cover-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/assets/projects/utopia/cover-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/projects/utopia/cover-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/projects/utopia/cover-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/projects/utopia/cover.webp",
+        "width": 1200
+      }
+    ]
   },
   {
     "slug": "vintage-creation",
@@ -345,7 +447,33 @@
         "alt": "Quinta imagen incluida en la publicación IV Concurso Vintage Creation."
       }
     ],
-    "externalUrl": "https://www.behance.net/gallery/249232167/IV-Concurso-Vintage-Creation"
+    "externalUrl": "https://www.behance.net/gallery/249232167/IV-Concurso-Vintage-Creation",
+    "coverSources": [
+      {
+        "src": "/assets/projects/vintage-creation/gallery-01-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/assets/projects/vintage-creation/gallery-01-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/projects/vintage-creation/gallery-01-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/projects/vintage-creation/gallery-01-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/projects/vintage-creation/gallery-01-1280.webp",
+        "width": 1280
+      },
+      {
+        "src": "/assets/projects/vintage-creation/gallery-01.webp",
+        "width": 1400
+      }
+    ]
   },
   {
     "slug": "tu-sitio-waraira",
@@ -389,7 +517,33 @@
         "alt": "Detalle de vinil impreso con el usuario social de Tu Sitio Waraira."
       }
     ],
-    "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/tu-sitio-waraira"
+    "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/tu-sitio-waraira",
+    "coverSources": [
+      {
+        "src": "/assets/projects/tu-sitio-waraira/cover-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/assets/projects/tu-sitio-waraira/cover-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/projects/tu-sitio-waraira/cover-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/projects/tu-sitio-waraira/cover-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/projects/tu-sitio-waraira/cover-1280.webp",
+        "width": 1280
+      },
+      {
+        "src": "/assets/projects/tu-sitio-waraira/cover.webp",
+        "width": 1400
+      }
+    ]
   },
   {
     "slug": "billy-burgers",
@@ -433,7 +587,33 @@
         "alt": "Fotografía exterior del food truck Billy Burger's con el menú y el sistema gráfico aplicados."
       }
     ],
-    "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/billy-burgers-food-truck"
+    "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/billy-burgers-food-truck",
+    "coverSources": [
+      {
+        "src": "/assets/projects/billy-burgers/cover-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/assets/projects/billy-burgers/cover-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/projects/billy-burgers/cover-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/projects/billy-burgers/cover-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/projects/billy-burgers/cover-1280.webp",
+        "width": 1280
+      },
+      {
+        "src": "/assets/projects/billy-burgers/cover.webp",
+        "width": 1400
+      }
+    ]
   },
   {
     "slug": "visualizacion-3d",
@@ -478,6 +658,32 @@
         "alt": "Otra vista del interior del restaurante, con mesas de comedor y revestimiento de madera."
       }
     ],
-    "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/visualizacion-3d-restaurante"
+    "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/visualizacion-3d-restaurante",
+    "coverSources": [
+      {
+        "src": "/assets/projects/visualizacion-3d/cover-320.webp",
+        "width": 320
+      },
+      {
+        "src": "/assets/projects/visualizacion-3d/cover-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/assets/projects/visualizacion-3d/cover-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/assets/projects/visualizacion-3d/cover-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/assets/projects/visualizacion-3d/cover-1280.webp",
+        "width": 1280
+      },
+      {
+        "src": "/assets/projects/visualizacion-3d/cover.webp",
+        "width": 1400
+      }
+    ]
   }
 ]

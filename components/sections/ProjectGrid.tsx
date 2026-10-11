@@ -5,7 +5,7 @@ import ProjectCard from '@/components/ui/ProjectCard';
 import { CATEGORY_LABELS } from '@/lib/categories';
 import type { ProjectItem } from '@/types/content';
 
-export default function ProjectGrid({ projects }: { projects: ProjectItem[] }) {
+export default function ProjectGrid({ projects, eagerFirstCard = false }: { projects: ProjectItem[]; eagerFirstCard?: boolean }) {
   const [active, setActive] = useState('all');
   const categories = useMemo(() => {
     const priority = ['branding', 'textil', 'publicidad', 'ilustracion', '3d', 'exploracion'];
@@ -37,7 +37,7 @@ export default function ProjectGrid({ projects }: { projects: ProjectItem[] }) {
         {`${visible.length} ${visible.length === 1 ? 'proyecto' : 'proyectos'}`}
       </p>
       <div className="project-grid" aria-live="off">
-        {visible.map((project, index) => <ProjectCard key={project.slug} project={project} index={index} />)}
+        {visible.map((project, index) => <ProjectCard key={project.slug} project={project} index={index} priority={eagerFirstCard && index === 0} />)}
       </div>
     </>
   );

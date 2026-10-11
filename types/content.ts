@@ -4,6 +4,11 @@ export interface ProjectImage {
   caption?: string;
 }
 
+export interface ResponsiveImageSource {
+  src: string;
+  width: number;
+}
+
 export interface StoryStage {
   title: string;
   description: string;
@@ -24,6 +29,7 @@ export interface ProjectItem {
   tools: string[];
   cover: string;
   coverAlt: string;
+  coverSources?: ResponsiveImageSource[];
   coverFit?: 'cover' | 'contain';
   gallery: ProjectImage[];
   sceneSequence?: ProjectImage[];
