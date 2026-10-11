@@ -21,6 +21,7 @@ El brief pidió evitar preguntas de ida y vuelta. Para avanzar se usaron fuentes
 ## Pendientes exclusivamente de publicación
 
 - En esta sesión, la consulta de solo lectura a Netlify respondió HTTP 401. No se modificó el hosting ni se publicó en producción; se requiere reautorizar el conector antes de desplegar o comprobar la recepción del formulario.
+- El push autorizado a `ackermaaanlevi99-collab-patch-1` fue rechazado por GitHub con HTTP 403; los commits permanecen en la rama local y no se reintentó. Antes de publicarlos, hay que restaurar permiso de escritura o reautorizar la credencial GitHub.
 - Verificar en un deploy real de Netlify que el formulario `contacto-portafolio` quede detectado por el proveedor y que sus notificaciones lleguen al destinatario configurado por el propietario. La conexión de emails/roles del proveedor no se cambia desde este repositorio.
 - Decidir si `main` se integra después de la revisión del pull request. Esta rama no se mergeó; el código se dejó separado hasta poder revisar el preview del PR.
 - Si se prefiere el otro email (de Drive) antes de producción, editar `contact.email` en `content/site.json` y el mismo destinatario usado por Netlify; la dirección vigente del sitio se mantuvo como valor inicial.
