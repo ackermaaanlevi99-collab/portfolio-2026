@@ -215,7 +215,10 @@ img { max-width: 100%; }
 .form-field input:focus-visible, .form-field select:focus-visible, .form-field textarea:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgb(75 255 46 / 18%); }
 .form-consent { margin: 0; color: var(--text-3); font-size: .76rem; line-height: 1.6; }
 .form-submit { justify-self: start; }
-.contact-form__error { padding: .8rem; border-left: 3px solid #FF805F; color: var(--text-1); background: rgb(255 128 95 / 8%); font-size: .85rem; }
+.contact-form__status { margin: 0; color: var(--text-2); font-size: .82rem; line-height: 1.5; }
+.contact-form__error { margin: 0; padding: .8rem; border-left: 3px solid #FF805F; color: var(--text-1); background: rgb(255 128 95 / 8%); font-size: .85rem; line-height: 1.6; }
+.contact-form__error a { color: var(--accent); text-underline-offset: .15em; }
+.form-submit:disabled { cursor: progress; opacity: .72; }
 .thanks-page { min-height: 75vh; display: grid; place-items: center; padding-block: 9rem 4rem; }
 .thanks-page__inner { width: min(100% - 2 * var(--gutter-d), 50rem); padding: clamp(1.8rem, 5vw, 4rem); border: 1px solid var(--line); }
 .thanks-page h1 { margin: .9rem 0 1rem; font: 600 clamp(2.8rem, 7vw, 5rem)/.96 var(--font-display); letter-spacing: -.055em; }
