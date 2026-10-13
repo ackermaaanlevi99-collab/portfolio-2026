@@ -1,29 +1,35 @@
 # Diagnóstico del fallo del plugin de Netlify
 
-## Evidencia del deploy
+## Causa confirmada
 
-El Deploy Preview inicial de `ackermaaanlevi99-collab-patch-1` (commit `8cdab50`) informó `state: error`, `plugin_state: failed_build` y `error_message: null` en la metadata pública. La página de logs del build exige una sesión de Netlify; la llamada protegida no estuvo disponible en esta sesión.
+El Deploy Preview del commit `43c094c` (`ackermaaanlevi99-collab-patch-1`) falló en el deploy `6acd1709fb407f1d9127553b`. El log de Netlify identifica el plugin `netlify-plugin-cloudinary` y el error: requiere un Cloud Name; no se encontró ni un `cloudName` configurado en el plugin ni `CLOUDINARY_CLOUD_NAME` disponible para ese build. El propio log indica que se ejecutaba «from Netlify app info».
 
-## Causa de alta probabilidad
+El dashboard mostró Cloudinary habilitado en **Project configuration → Developer settings → Build plugins**. El repositorio no contiene referencias a `netlify-plugin-cloudinary`, `cloudName` ni `CLOUDINARY_CLOUD_NAME`. El sitio ya sirve variantes WebP locales y responsivas; la aplicación no depende de Cloudinary para mostrar sus imágenes.
 
-El código del formulario visible usaba `data-netlify="true"` y `data-netlify-honeypot="bot-field"` dentro del árbol React, pero no existía un archivo HTML estático en `public/` con la declaración del formulario. La documentación del adaptador OpenNext para Netlify describe exactamente esta combinación como motivo para detener el build deliberadamente: detecta atributos Netlify Forms en React y no encuentra el formulario equivalente en HTML estático. Sin el log remoto no se puede certificar que ese fuera el único error del deploy, pero la coincidencia con el código y la condición documentada es directa.
+El plugin de Cloudinary transforma las URLs de imágenes compiladas y puede dirigir assets de imagen a Cloudinary. Para la instalación desde la interfaz de Netlify exige un Cloud Name. La guía del plugin permite configurarlo con el input `cloudName` o la variable `CLOUDINARY_CLOUD_NAME`; no se debe inventar ese valor. [Cloudinary Netlify Plugin README](https://github.com/cloudinary-community/netlify-plugin-cloudinary) [Netlify Build plugins](https://docs.netlify.com/integrations/build-plugins/)
 
 ## Corrección aplicada
 
-- Añadida `public/__forms.html`, plantilla oculta para que Netlify detecte el formulario durante el build. Declara el nombre `contacto-portafolio`, los campos `nombre`, `email`, `servicio`, `mensaje` y el honeypot `bot-field`.
-- Separado el formulario interactivo en `ContactForm.tsx`. Conserva la validación nativa, envía URL-encoded por `POST` a `/__forms.html`, muestra un estado de espera y un error accesible, y navega a `/gracias` solo tras una respuesta HTTP correcta.
-- El formulario visible y la plantilla estática comparten el mismo identificador y nombres de campo.
-- No se desactivó `NETLIFY_NEXT_VERIFY_FORMS`, no se fijó ni añadió manualmente una versión del plugin y no se modificó la configuración de producción.
+- Se desactivó únicamente el plugin Cloudinary en la configuración del sitio Netlify. El dashboard pasó a mostrar **Enable**, confirmando el cambio.
+- No se creó ni modificó una variable de entorno, no se añadió una dependencia de Cloudinary y no se tocó la rama `main`.
+- El cambio de plugin afecta builds futuros; el sitio publicado existente no se reemplaza hasta que se publique otra versión.
+- Si se decide usar Cloudinary posteriormente, se puede volver a habilitar el plugin y proporcionar el Cloud Name real en su input o en el entorno de build.
 
-## Validación local
+## Cambios independientes del formulario
+
+La corrección previa añadió `public/__forms.html` y separó el formulario interactivo en `ContactForm.tsx` para cumplir el requisito de detección de Netlify Forms con Next.js/OpenNext. Esa fue una precaución de compatibilidad independiente; el log inspeccionado atribuye este fallo a Cloudinary, no a Netlify Forms. La recepción real del formulario aún requiere un Deploy Preview funcional y una prueba autorizada.
+
+## Validación y estado
 
 - `npm run lint`: correcto.
 - `npm run typecheck`: correcto.
-- `npm run build` de producción: correcto en una copia aislada del repositorio.
-- Comprobación de la plantilla HTML: nombre, atributo `data-netlify`, honeypot y campos requeridos coinciden.
-- No se envió una consulta real; la detección y recepción final deben confirmarse en el nuevo Deploy Preview de Netlify.
+- `npm run build` de producción: correcto en una copia aislada del repositorio antes de la corrección del plugin de Netlify.
+- Plugin Cloudinary: desactivado en la interfaz del proyecto.
+- Pendiente: generar y revisar un nuevo Deploy Preview de la rama `ackermaaanlevi99-collab-patch-1`; el deploy fallido existente corresponde al estado anterior a la desactivación.
+- No se ha fusionado a `main` ni se ha publicado una versión nueva al dominio de producción.
 
 ## Fuentes
 
-- Netlify, [Next.js on Netlify](https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/): adaptador OpenNext automático; recomienda no fijar su versión manualmente.
-- OpenNext, [Using Netlify Forms with Next.js](https://opennext.js.org/netlify/forms): archivo estático de detección, envío a la ruta estática y verificación que puede provocar un fallo deliberado.
+- [Netlify Build plugins](https://docs.netlify.com/integrations/build-plugins/): alcance de plugins instalados desde la interfaz y requisitos de configuración.
+- [Cloudinary Netlify Plugin](https://github.com/cloudinary-community/netlify-plugin-cloudinary): requisito de Cloud Name y comportamiento de optimización/entrega de imágenes.
+- [Integración Cloudinary de Netlify](https://www.netlify.com/integrations/cloudinary/build-plugin/): descripción de la integración.
