@@ -2,7 +2,7 @@
 
 ## Causa confirmada
 
-El Deploy Preview del commit `43c094c` (`ackermaaanlevi99-collab-patch-1`) falló en el deploy `6acd1709fb407f1d9127553b`. El log de Netlify identifica `netlify-plugin-cloudinary`: exige un Cloud Name y no encontró `cloudName` ni `CLOUDINARY_CLOUD_NAME` para ese build. El propio log indica que el plugin provenía de la información de la app en Netlify.
+El Deploy Preview del commit `43c094c` (`ackermaaanlevi99-collab-patch-1`) falló en el deploy `6acd1709fb407f1d9127553b`. El log de Netlify identifica `netlify-plugin-cloudinary`: exige un Cloud Name y no encontró `cloudName` ni `CLOUDINARY_CLOUD_NAME` para ese build. El log indica que el plugin provenía de la información de la app en Netlify.
 
 El dashboard mostraba Cloudinary habilitado en **Project configuration → Developer settings → Build plugins**. El repositorio no contiene referencias de aplicación al plugin, a `cloudName` ni a `CLOUDINARY_CLOUD_NAME`. El portfolio sirve variantes WebP locales y responsivas; no necesita Cloudinary para mostrar sus imágenes.
 
@@ -10,23 +10,25 @@ El dashboard mostraba Cloudinary habilitado en **Project configuration → Devel
 
 Se desactivó únicamente el plugin Cloudinary desde el panel del sitio. Netlify ahora muestra **Enable** para ese plugin, lo que confirma que quedó desactivado. No se modificaron variables de entorno, no se añadió una dependencia y no se tocó `main`. La guía del plugin permite volver a habilitarlo con un Cloud Name real si se decide usarlo más adelante. [Cloudinary Netlify Plugin README](https://github.com/cloudinary-community/netlify-plugin-cloudinary)
 
-## Deploy Preview y verificación HTTP
+## Deploy Preview y rutas
 
-Netlify generó correctamente el Deploy Preview `6aceafdca25f1e95fc694c0e` para el commit `5751b02` de la rama `ackermaaanlevi99-collab-patch-1`. Su estado fue `ready` y el check del PR informó **Deploy Preview ready**. La URL del Preview es [deploy-preview-1--emmanuelaranguibelgraphicdesigner.netlify.app](https://deploy-preview-1--emmanuelaranguibelgraphicdesigner.netlify.app).
+El Deploy Preview `6aceb2136e53b6d8693ecb1a` se completó con estado `success` para el commit `8a7ae79` de `ackermaaanlevi99-collab-patch-1`. La URL es [deploy-preview-1--emmanuelaranguibelgraphicdesigner.netlify.app](https://deploy-preview-1--emmanuelaranguibelgraphicdesigner.netlify.app).
 
-Las rutas `/`, `/gracias` y `/__forms.html` respondieron HTTP 200. La plantilla estática contiene `contacto-portafolio`, `data-netlify`, `bot-field` y el campo `email`. Estas respuestas confirman que el artefacto y esas rutas se sirven, pero todavía no demuestran que Netlify haya registrado o recibido envíos del formulario.
+En ese Preview, `GET /`, `GET /gracias` y `GET /__forms.html` respondieron HTTP 200. La plantilla estática contiene `contacto-portafolio`, `data-netlify`, `bot-field` y el campo `email`.
 
-## Detección y facturación de formularios
+## Detección, recepción y facturación de Forms
 
-En el panel **Forms** la detección aparecía desactivada. Se habilitó; el panel confirmó **Form detection is enabled**. Netlify indica que empezará a analizar los formularios a partir del siguiente deploy. Por ello, el Preview `5751b02` se generó antes de activar la detección y no basta para confirmar el registro de `contacto-portafolio`; hace falta un deploy nuevo de la rama.
+La detección de formularios estaba desactivada en Netlify. Se habilitó desde **Forms**; el panel confirmó **Form detection is enabled**. Tras el deploy siguiente, Netlify registró el formulario activo `contacto-portafolio`.
 
-El panel informa que el equipo opera con créditos. La documentación oficial de Netlify indica que Forms es gratis e ilimitado en los planes basados en créditos, y que los Deploy Previews cuestan 0 créditos. [Forms usage and billing](https://docs.netlify.com/manage/forms/usage-and-billing/) [How credits work](https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work/) [Forms setup](https://docs.netlify.com/manage/forms/setup/)
+Se hizo una única prueba real desde el Deploy Preview con datos sintéticos y texto marcado como QA: `QA Netlify Forms`, `qa@example.com`, servicio `Identidad de marca`, mensaje `PRUEBA TECNICA DE NETLIFY FORMS para validar el Deploy Preview. No es una consulta comercial; no responder.` La página navegó a `/gracias` y mostró «Netlify confirmó la recepción de tu mensaje». Después, el panel de Netlify mostró una submission verificada con esos campos. El registro de prueba permanece en el dashboard para que se pueda identificar y borrar si se desea. No se modificaron los ajustes de notificación.
+
+El panel informa que el equipo opera con créditos. La documentación oficial de Netlify indica que Forms es gratis e ilimitado en los planes basados en créditos, y que los Deploy Previews cuestan 0 créditos. [Forms usage and billing](https://docs.netlify.com/manage/forms/usage-and-billing/) [How credits work](https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work/) [Forms setup](https://docs.netlify.com/forms/setup/)
 
 ## Validación y pasos pendientes
 
-`npm run lint` y `npm run typecheck` pasaron. `npm run build` de producción pasó en una copia aislada del repositorio antes de la corrección del plugin. El Deploy Preview `5751b02` quedó listo y las tres rutas anteriores respondieron HTTP 200.
+`npm run lint` y `npm run typecheck` pasaron. `npm run build` de producción pasó en una copia aislada del repositorio. Netlify generó el Preview exitoso descrito arriba, detectó el formulario y aceptó el envío de QA.
 
-Después de activar la detección se necesita un nuevo Deploy Preview para que Netlify vuelva a escanear el formulario. Luego se verificará que `contacto-portafolio` figure en **Forms**. No se ha enviado ningún dato de prueba. La cuenta de equipo muestra que los deploys de producción están pausados por créditos; el sitio ya publicado sigue en línea. No se fusionó a `main` ni se publicó una versión nueva al dominio de producción.
+La cuenta de equipo muestra que los deploys de producción están pausados por créditos; el sitio que ya estaba publicado sigue en línea. No se fusionó a `main` ni se actualizó el dominio de producción. La actualización al sitio público requiere que se reanuden los deploys de producción y que el usuario confirme la fusión de la rama patch.
 
 ## Fuentes
 
@@ -34,4 +36,4 @@ Después de activar la detección se necesita un nuevo Deploy Preview para que N
 - [Cloudinary Netlify Plugin](https://github.com/cloudinary-community/netlify-plugin-cloudinary): requisito de Cloud Name y comportamiento sobre imágenes.
 - [Forms usage and billing](https://docs.netlify.com/manage/forms/usage-and-billing/): costo de Forms en planes basados en créditos.
 - [How credits work](https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work/): crédito de Deploy Previews y Forms.
-- [Forms setup](https://docs.netlify.com/manage/forms/setup/): activación y próximo deploy necesario para detectar formularios.
+- [Forms setup](https://docs.netlify.com/forms/setup/): activación y detección de formularios en el siguiente deploy.
