@@ -1,7 +1,7 @@
 # Aranguibel Studio — Sitio Web
 
 Sitio web premium para estudio de diseño gráfico, publicitario, textil y de
-visualización 3D. Construido con Next.js 14 (App Router), TypeScript,
+visualización 3D. Construido con Next.js 15 (App Router), TypeScript,
 TailwindCSS, Framer Motion, GSAP y Lenis.
 
 ## Cómo correrlo

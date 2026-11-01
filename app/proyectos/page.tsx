@@ -22,6 +22,7 @@ export default function ProjectsPage() {
         <h1 id="archive-title">Proyectos<br />publicados.</h1>
         <p>{site.portfolio.description} {projects.length} proyectos seleccionados, vinculados con sus fuentes y fichas de origen.</p>
       </header>
+      <h2 className="sr-only">Lista de proyectos</h2>
       <ProjectGrid projects={projects} eagerFirstCard />
       <section className="motion-archive-section" aria-labelledby="motion-archive-title">
         <div className="project-gallery__heading"><h2 id="motion-archive-title">Archivo en movimiento</h2><span className="eyebrow">{String(archive.length).padStart(2, '0')} PIEZAS</span></div>

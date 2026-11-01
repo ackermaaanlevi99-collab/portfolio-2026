@@ -18,6 +18,7 @@ export default function Services({ headingLevel = 'h2' }: { headingLevel?: 'h1' 
           </div>
           <p className="section-intro__aside">{site.about.text}</p>
         </header>
+        {headingLevel === 'h1' ? <h2 className="sr-only">Áreas de servicio</h2> : null}
         <div className="services-grid">
           {services.map((service) => {
             const examples = getProjectsForService(service.id);

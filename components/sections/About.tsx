@@ -29,6 +29,7 @@ export default function About({ headingLevel = 'h2' }: { headingLevel?: 'h1' | '
 
           <div className="about-experience">
             <p className="eyebrow">Experiencia</p>
+            <h2 className="sr-only">Experiencia profesional</h2>
             <div className="experience-list">
               {site.experience.map((item) => (
                 <article className="experience-entry" key={`${item.period}-${item.org}`}>
