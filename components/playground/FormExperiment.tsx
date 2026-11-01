@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { createAudioEngine, type AudioEngine } from '@/lib/audio-reactive';
 
 // Experimento "Forma": una nube de puntos que se transforma entre tres formas
 // matemáticas. Todo se calcula en el cliente; no hay datos ni assets externos.
@@ -93,6 +94,10 @@ export default function FormExperiment() {
   const [noise, setNoise] = useState(20);
   const [paused, setPaused] = useState(false);
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
+  // Audio reactivo: apagado por defecto y solo se enciende con un clic.
+  const [audioOn, setAudioOn] = useState(false);
+  const [audioError, setAudioError] = useState<string | null>(null);
+  const audioRef = useRef<AudioEngine | null>(null);
 
   // Las líneas de animación leen estos valores por referencia, sin reiniciar la escena.
   const shapeRef = useRef(shape);
@@ -103,6 +108,30 @@ export default function FormExperiment() {
     noiseRef.current = noise;
     pausedRef.current = paused;
   }, [shape, noise, paused]);
+
+  useEffect(() => {
+    return () => {
+      audioRef.current?.dispose();
+      audioRef.current = null;
+    };
+  }, []);
+
+  async function toggleAudio() {
+    if (audioOn) {
+      await audioRef.current?.stop();
+      setAudioOn(false);
+      return;
+    }
+    try {
+      if (!audioRef.current) audioRef.current = createAudioEngine();
+      await audioRef.current.start();
+      setAudioError(null);
+      setAudioOn(true);
+    } catch {
+      setAudioError('No se pudo iniciar el audio en este navegador.');
+      setAudioOn(false);
+    }
+  }
 
   useEffect(() => {
     const host = hostRef.current;
@@ -183,6 +212,11 @@ export default function FormExperiment() {
       let visible = true;
       const intersection = new IntersectionObserver(([entry]) => {
         visible = entry.isIntersecting;
+        // El sonido no debe seguir sonando si el experimento ya no se ve.
+        if (!visible && audioRef.current?.isRunning()) {
+          void audioRef.current.stop();
+          setAudioOn(false);
+        }
       });
       intersection.observe(host);
 
@@ -201,7 +235,10 @@ export default function FormExperiment() {
         }
         positionAttr.needsUpdate = true;
 
-        uniforms.uNoise.value = noiseRef.current / 100;
+        // El nivel del audio (si está activo) añade turbulencia y tamaño a los puntos.
+        const level = audioRef.current?.level() ?? 0;
+        uniforms.uNoise.value = noiseRef.current / 100 + level * 0.35;
+        uniforms.uSize.value = 10 + level * 6;
         if (!isPaused) {
           uniforms.uTime.value += dt;
           points.rotation.y += dt * 0.25;
@@ -273,7 +310,20 @@ export default function FormExperiment() {
         <button type="button" className="playground__button" aria-pressed={paused} onClick={() => setPaused((v) => !v)}>
           {paused ? 'Reanudar movimiento' : 'Pausar movimiento'}
         </button>
+
+        <button type="button" className="playground__button" aria-pressed={audioOn} onClick={toggleAudio}>
+          {audioOn ? 'Silenciar audio' : 'Activar audio'}
+        </button>
       </div>
+
+      <p className="playground__status">
+        Audio reactivo opcional: sonido generado en tu navegador, apagado por defecto, sin música grabada. Se apaga al salir del experimento.
+      </p>
+      {audioError && (
+        <p className="playground__status" role="alert">
+          {audioError}
+        </p>
+      )}
     </div>
   );
 }
