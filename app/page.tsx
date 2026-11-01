@@ -1,4 +1,5 @@
 import Hero from '@/components/sections/Hero';
+import VisualUniverse from '@/components/sections/VisualUniverse';
 import Portfolio from '@/components/sections/Portfolio';
 import Services from '@/components/sections/Services';
 import About from '@/components/sections/About';
@@ -9,6 +10,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <ScrollReveal><VisualUniverse /></ScrollReveal>
       <ScrollReveal><Portfolio /></ScrollReveal>
       <ScrollReveal delay={60}><Services /></ScrollReveal>
       <ScrollReveal delay={100}><About /></ScrollReveal>

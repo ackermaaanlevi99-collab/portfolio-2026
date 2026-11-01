@@ -1,0 +1,90 @@
+{
+  "diseno-publicitario": [
+    {
+      "kind": "motion",
+      "src": "/assets/eag/motion/publicidad.webp",
+      "poster": "/assets/eag/motion/publicidad-poster.webp",
+      "width": 720,
+      "height": 44,
+      "alt": "Animación 05 del archivo de diseño de Emmanuel Aranguibel."
+    },
+    {
+      "kind": "motion",
+      "src": "/assets/eag/motion/giff-diseno-publicitario.webp",
+      "poster": "/assets/eag/motion/giff-diseno-publicitario-poster.webp",
+      "width": 720,
+      "height": 292,
+      "alt": "Animación 09 del archivo de diseño de Emmanuel Aranguibel."
+    }
+  ],
+  "diseno-textil": [
+    {
+      "kind": "motion",
+      "src": "/assets/eag/motion/textile-desing.webp",
+      "poster": "/assets/eag/motion/textile-desing-poster.webp",
+      "width": 720,
+      "height": 292,
+      "alt": "Animación 11 del archivo de diseño de Emmanuel Aranguibel."
+    },
+    {
+      "kind": "motion",
+      "src": "/assets/eag/motion/sublimation-gif.webp",
+      "poster": "/assets/eag/motion/sublimation-gif-poster.webp",
+      "width": 720,
+      "height": 44,
+      "alt": "Animación 07 del archivo de diseño de Emmanuel Aranguibel."
+    },
+    {
+      "kind": "motion",
+      "src": "/assets/eag/motion/bordado-gif.webp",
+      "poster": "/assets/eag/motion/bordado-gif-poster.webp",
+      "width": 720,
+      "height": 44,
+      "alt": "Animación 08 del archivo de diseño de Emmanuel Aranguibel."
+    }
+  ],
+  "visualizacion-3d": [
+    {
+      "kind": "motion",
+      "src": "/assets/eag/motion/gid-3d.webp",
+      "poster": "/assets/eag/motion/gid-3d-poster.webp",
+      "width": 720,
+      "height": 44,
+      "alt": "Animación 06 del archivo de diseño de Emmanuel Aranguibel."
+    },
+    {
+      "kind": "motion",
+      "src": "/assets/eag/motion/3dddd.webp",
+      "poster": "/assets/eag/motion/3dddd-poster.webp",
+      "width": 720,
+      "height": 292,
+      "alt": "Animación 12 del archivo de diseño de Emmanuel Aranguibel."
+    }
+  ],
+  "ilustracion": [
+    {
+      "kind": "motion",
+      "src": "/assets/eag/motion/quive-recuperado.webp",
+      "poster": "/assets/eag/motion/quive-recuperado-poster.webp",
+      "width": 720,
+      "height": 320,
+      "alt": "Animación 03 del archivo de diseño de Emmanuel Aranguibel."
+    },
+    {
+      "kind": "motion",
+      "src": "/assets/eag/motion/quive-recuperado-1.webp",
+      "poster": "/assets/eag/motion/quive-recuperado-1-poster.webp",
+      "width": 485,
+      "height": 216,
+      "alt": "Animación 02 del archivo de diseño de Emmanuel Aranguibel."
+    },
+    {
+      "kind": "motion",
+      "src": "/assets/eag/motion/cessna-gif.webp",
+      "poster": "/assets/eag/motion/cessna-gif-poster.webp",
+      "width": 523,
+      "height": 215,
+      "alt": "Animación 04 del archivo de diseño de Emmanuel Aranguibel."
+    }
+  ]
+}

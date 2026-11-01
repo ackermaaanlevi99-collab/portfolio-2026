@@ -636,3 +636,10 @@ img { max-width: 100%; }
 .motion-archive { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: var(--sp-4); }
 .motion-archive__item { margin: 0; border: 1px solid var(--line); background: #070907; overflow: hidden; }
 .motion-archive__item img { display: block; width: 100%; height: auto; }
+
+/* Universo visual (portada). */
+.visual-universe__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--sp-6); }
+.visual-universe__item h3 { margin: .9rem 0 0; font: 500 .72rem/1.4 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; }
+.visual-universe__item h3 a { color: var(--text-2); text-decoration: none; }
+.visual-universe__item h3 a:hover { color: var(--accent); }
+.motion-archive--row { margin-top: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); }

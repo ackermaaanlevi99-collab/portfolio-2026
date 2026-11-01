@@ -13,7 +13,7 @@ export type ArchiveItem = {
 
 // Archivo de movimiento: GIF convertidos a WebP animado. Con "reducir movimiento"
 // se muestra el primer cuadro fijo. Las imágenes se cargan de forma diferida.
-export default function MotionArchive({ items }: { items: ArchiveItem[] }) {
+export default function MotionArchive({ items, className }: { items: ArchiveItem[]; className?: string }) {
   const [reduced, setReduced] = useState(false);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function MotionArchive({ items }: { items: ArchiveItem[] }) {
   }, []);
 
   return (
-    <ul className="motion-archive" role="list">
+    <ul className={className ? `motion-archive ${className}` : 'motion-archive'} role="list">
       {items.map((item) => (
         <li key={item.src} className="motion-archive__item">
           {/* Imágenes del archivo: texto alternativo descriptivo, sin afirmar resultados. */}
