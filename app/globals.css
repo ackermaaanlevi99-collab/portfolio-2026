@@ -622,3 +622,5 @@ img { max-width: 100%; }
 .gather-story--static .gather-story__steps { margin-top: var(--sp-4); }
 .gather-story--static .gather__status { margin-top: var(--sp-4); }
 @media (prefers-reduced-motion: reduce) { .gather-story__steps li { transition: none; } }
+.project-experiment__sub { margin: clamp(2.5rem, 6vw, 4rem) 0 1rem; }
+.project-experiment__sub h3 { margin: 0; font: 500 clamp(1.1rem, 2vw, 1.5rem)/1.2 var(--font-display); }
