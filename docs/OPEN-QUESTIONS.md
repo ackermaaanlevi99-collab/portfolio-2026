@@ -4,7 +4,7 @@ El brief pidió evitar preguntas de ida y vuelta. Se conservaron decisiones resp
 
 ## Decisiones y verificaciones respaldadas por las fuentes disponibles
 
-1. **Correo del portfolio:** se conserva `aranguibelgonzaleze@gmail.com`, el que ya aparece en el sitio público. No se modificó el destinatario. Se envió una submission QA sintética a `qa@example.com`, no una consulta real.
+1. **Correo del portfolio:** se cambió a `eagraphicdesigner15@gmail.com` por instrucción del propietario. No se modificó el destinatario. Se envió una submission QA sintética a `qa@example.com`, no una consulta real.
 2. **Behance:** se usa `https://www.behance.net/emmanuearangui`. Beacons apunta a `https://beacons.ai/eagraphicdesigner`.
 3. **Contenido del Drive:** IAIM, UCV fútbol, La Meka, INNOVA3DLABS y Órbita siguen ocultos porque la fuente indica `published: false`.
 4. **ANA VALDEZ:** se encontró el video original compartido en Drive y se extrajeron 16 escenas para el visor. La fecha publicada en Behance es 23 de agosto de 2026.
