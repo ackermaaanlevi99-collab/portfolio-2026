@@ -552,3 +552,53 @@ img { max-width: 100%; }
 .gather__button:focus-visible, .gather__range input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .gather__button:disabled { opacity: .5; cursor: progress; }
 @media (prefers-reduced-motion: reduce) { .gather__button { transition: none; } }
+
+/* Playground: tres experimentos (Forma, Imagen, Composición). Solo tokens del sitio. */
+.playground-page { padding-top: clamp(8.5rem, 14vw, 11rem); }
+.playground-page__intro { max-width: 60ch; margin-bottom: clamp(2rem, 4vw, 3.5rem); }
+.playground-page__intro h1 { margin: .8rem 0 .9rem; font: 600 clamp(2.6rem, 6vw, 5rem)/.95 var(--font-display); letter-spacing: -.05em; }
+.playground-page__intro p:last-child { margin: 0; color: var(--text-2); line-height: 1.7; }
+.playground { display: grid; gap: var(--sp-6); }
+.playground__tabs { display: flex; flex-wrap: wrap; gap: var(--sp-2); border-bottom: 1px solid var(--line); }
+.playground__tab {
+  min-height: 44px; padding: .6rem 1rem; margin-bottom: -1px;
+  border: 1px solid transparent; border-bottom: 0; background: transparent; color: var(--text-2);
+  font: 500 .7rem/1.3 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; cursor: pointer;
+}
+.playground__tab:hover { color: var(--text-1); }
+.playground__tab[aria-selected="true"] { color: var(--accent); border-color: var(--line); background: var(--bg-1); }
+.playground__tab:focus-visible, .playground__button:focus-visible, .playground__swatch:focus-visible,
+.playground__select select:focus-visible, .playground__range input:focus-visible, .playground__stage:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 3px;
+}
+.playground__panel { min-width: 0; }
+.playground__panel[hidden] { display: none; }
+.playground__stage { position: relative; min-width: 0; background: var(--bg-1); border: 1px solid var(--line); overflow: hidden; }
+.playground__stage--form { aspect-ratio: 4 / 3; max-height: 78vh; width: 100%; }
+.playground__stage--composition { width: 100%; }
+.playground__host { position: absolute; inset: 0; }
+.playground__canvas { display: block; width: 100%; height: auto; touch-action: none; user-select: none; }
+.playground__status { margin: 0; color: var(--text-2); font: 500 .68rem/1.5 var(--font-mono); letter-spacing: .04em; text-transform: uppercase; }
+.playground__status--overlay { position: absolute; left: var(--sp-4); bottom: var(--sp-4); z-index: 1; }
+.playground__controls, .playground__toolbar { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: center; }
+.playground__group { display: inline-flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; }
+.playground__button {
+  min-height: 40px; padding: .55rem .9rem; border: 1px solid var(--line-strong); background: transparent; color: var(--text-1);
+  font: 500 .66rem/1.3 var(--font-mono); letter-spacing: .05em; text-transform: uppercase; cursor: pointer;
+  transition: border-color var(--t-fast) ease, color var(--t-fast) ease;
+}
+.playground__button:hover { border-color: var(--accent); color: var(--accent); }
+.playground__button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+.playground__button--primary { border-color: var(--accent); color: var(--accent); }
+.playground__button:disabled { opacity: .45; cursor: not-allowed; }
+.playground__swatch { width: 32px; height: 32px; border: 1px solid var(--line-strong); cursor: pointer; }
+.playground__swatch[aria-pressed="true"] { outline: 2px solid var(--accent); outline-offset: 2px; }
+.playground__range, .playground__select { display: inline-flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; color: var(--text-2); font: 500 .66rem/1 var(--font-mono); letter-spacing: .05em; text-transform: uppercase; }
+.playground__range input[type="range"] { width: min(70vw, 240px); accent-color: var(--accent); }
+.playground__select select {
+  min-height: 40px; max-width: min(80vw, 320px); padding: .45rem .7rem; border: 1px solid var(--line-strong);
+  background: var(--bg-0); color: var(--text-1); font: 500 .7rem/1.3 var(--font-mono);
+}
+.playground-image { display: grid; gap: var(--sp-4); justify-items: center; }
+.playground-form, .playground-composition, .playground-image { display: grid; gap: var(--sp-4); min-width: 0; }
+@media (prefers-reduced-motion: reduce) { .playground__button { transition: none; } }
