@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { sampleImageData } from '@/lib/gather-sampler';
+import { sampleProjectImage, supportsWebGL } from '@/lib/gather-image';
 import type { GatherController } from '@/lib/gather-scene';
 
 type Phase = 'idle' | 'loading' | 'active' | 'error';
@@ -11,33 +11,6 @@ interface GatherExperimentProps {
   src: string;
   alt: string;
   title: string;
-}
-
-const MAX_SAMPLE_SIDE = 360;
-
-async function sampleImage(src: string, budget: number) {
-  const image = new window.Image();
-  image.decoding = 'async';
-  image.src = src;
-  await image.decode();
-
-  const scale = Math.min(1, MAX_SAMPLE_SIDE / Math.max(image.naturalWidth, image.naturalHeight));
-  const width = Math.max(1, Math.round(image.naturalWidth * scale));
-  const height = Math.max(1, Math.round(image.naturalHeight * scale));
-
-  const canvas = document.createElement('canvas');
-  canvas.width = width;
-  canvas.height = height;
-  const context = canvas.getContext('2d', { willReadFrequently: true });
-  if (!context) throw new Error('Canvas 2D no disponible');
-  context.drawImage(image, 0, 0, width, height);
-  const { data } = context.getImageData(0, 0, width, height);
-  return sampleImageData(data, width, height, { budget, depth: 0.9 });
-}
-
-function supportsWebGL(): boolean {
-  const probe = document.createElement('canvas');
-  return Boolean(probe.getContext('webgl2') || probe.getContext('webgl'));
 }
 
 export default function GatherExperiment({ src, alt, title }: GatherExperimentProps) {
@@ -70,7 +43,7 @@ export default function GatherExperiment({ src, alt, title }: GatherExperimentPr
     setPhase('loading');
     try {
       const mobile = window.matchMedia('(pointer: coarse), (max-width: 760px)').matches;
-      const sample = await sampleImage(src, mobile ? 12000 : 40000);
+      const sample = await sampleProjectImage(src, mobile ? 12000 : 40000);
       const { mountGatherScene } = await import('@/lib/gather-scene');
       if (!hostRef.current) throw new Error('Contenedor no disponible');
       controllerRef.current?.dispose();

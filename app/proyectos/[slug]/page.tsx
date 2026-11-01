@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import Gallery from '@/components/ui/Gallery';
 import Scene16Viewer from '@/components/sections/Scene16Viewer';
-import GatherExperiment from '@/components/ui/GatherExperiment';
+import GatherScrollStory from '@/components/ui/GatherScrollStory';
 import CTA from '@/components/ui/CTA';
 import { getProjectBySlug, getProjectPaths, getPublishedProjects, getServiceTitle } from '@/lib/projects';
 import { getCategoryLabel } from '@/lib/categories';
@@ -146,8 +146,12 @@ export default async function ProjectPage({ params }: PageProps) {
       {project.particles && (
         <section className="project-experiment" aria-labelledby="experiment-title">
           <div className="project-gallery__heading"><h2 id="experiment-title">Experimento: de imagen a partícula</h2><span className="eyebrow">Opcional</span></div>
-          <p className="project-experiment__intro">La imagen del proyecto puede convertirse en una nube de partículas que se dispersa y se reconstruye. La galería y la imagen original siempre están disponibles.</p>
-          <GatherExperiment src={project.cover} alt={project.coverAlt} title={project.title} />
+          <p className="project-experiment__intro">Al desplazarte, la imagen del proyecto se separa en partículas y vuelve a formarse. Sin movimiento reducido o sin WebGL, se muestra la imagen original.</p>
+          <GatherScrollStory
+            src={project.cover}
+            alt={project.coverAlt}
+            steps={['Imagen original del proyecto', 'Los píxeles se separan en puntos', 'Los puntos vuelven a formar la imagen']}
+          />
         </section>
       )}
 
