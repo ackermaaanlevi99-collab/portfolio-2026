@@ -12,7 +12,7 @@ export default function PlaygroundPage() {
   const projects = getPublishedProjects().filter((project) => Boolean(project.cover));
 
   return (
-    <section className="playground-page section-space">
+    <section className="playground-page section-space page-container">
       <div className="playground-page__intro">
         <p className="eyebrow">Experimentos</p>
         <h1>Playground</h1>
