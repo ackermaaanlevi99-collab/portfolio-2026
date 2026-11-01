@@ -172,6 +172,8 @@ export function mountPortalScene(host: HTMLDivElement, callbacks: PortalCallback
     const width = Math.max(1, host.clientWidth);
     const height = Math.max(1, host.clientHeight);
     camera.aspect = width / height;
+    // Mantiene el objeto completo (anillo y cubos) dentro del encuadre en formatos estrechos.
+    camera.position.z = Math.max(4.35, 4.77 / camera.aspect);
     camera.updateProjectionMatrix();
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, mobileViewport.matches ? 1 : 1.35));
     renderer.setSize(width, height, false);
