@@ -30,7 +30,76 @@
       "Adobe Photoshop",
       "Adobe Illustrator"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/assets/projects/ana-valdez/gallery-01.webp",
+        "alt": "Imagen 1 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-02.webp",
+        "alt": "Imagen 2 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-03.webp",
+        "alt": "Imagen 3 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-04.webp",
+        "alt": "Imagen 4 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-05.webp",
+        "alt": "Imagen 5 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-06.webp",
+        "alt": "Imagen 6 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-07.webp",
+        "alt": "Pieza 1 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-08.webp",
+        "alt": "Pieza 2 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-09.webp",
+        "alt": "Pieza 3 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-10.webp",
+        "alt": "Pieza 4 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-11.webp",
+        "alt": "Pieza 5 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-12.webp",
+        "alt": "Pieza 6 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-13.webp",
+        "alt": "Pieza 7 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-14.webp",
+        "alt": "Pieza 8 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-15.webp",
+        "alt": "Pieza 9 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-16.webp",
+        "alt": "Pieza 10 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-17.webp",
+        "alt": "Pieza 11 del proyecto ANA VALDEZ — BRANDING."
+      }
+    ],
     "externalUrl": "https://www.behance.net/gallery/254711301/ANA-VALDEZ-BRANDING",
     "coverSources": [
       {
@@ -152,6 +221,26 @@
       {
         "src": "/assets/projects/portfolio-2026/gallery-02.webp",
         "alt": "Tercera pieza visual publicada dentro de la galería 2026."
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/gallery-03.webp",
+        "alt": "Montaje 1 del portafolio 2026, presentación de piezas."
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/gallery-04.webp",
+        "alt": "Montaje 2 del portafolio 2026, presentación de piezas."
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/gallery-05.webp",
+        "alt": "Montaje 3 del portafolio 2026, presentación de piezas."
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/gallery-06.webp",
+        "alt": "Montaje 4 del portafolio 2026, presentación de piezas."
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/gallery-07.webp",
+        "alt": "Montaje 5 del portafolio 2026, presentación de piezas."
       }
     ],
     "externalUrl": "https://www.behance.net/gallery/243101687/2026",
@@ -295,6 +384,38 @@
       {
         "src": "/assets/projects/usb/gallery-02.webp",
         "alt": "Vista complementaria de las prendas mostradas en el proyecto USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-03.webp",
+        "alt": "Pieza 1 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-04.webp",
+        "alt": "Pieza 2 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-05.webp",
+        "alt": "Pieza 3 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-06.webp",
+        "alt": "Pieza 4 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-07.webp",
+        "alt": "Pieza 5 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-08.webp",
+        "alt": "Pieza 6 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-09.webp",
+        "alt": "Pieza 7 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-10.webp",
+        "alt": "Pieza 8 del proyecto de prendas para la USB."
       }
     ],
     "externalUrl": "https://www.behance.net/gallery/249460231/Diseno-de-prendas-para-la-USB",
@@ -384,6 +505,10 @@
       {
         "src": "/assets/projects/utopia/gallery-01.webp",
         "alt": "Dorso de la camiseta Utopía Group: nombre Emmanuel, número 15 y una ilustración urbana en blanco y negro."
+      },
+      {
+        "src": "/assets/projects/utopia/gallery-02.webp",
+        "alt": "Montaje del proyecto Utopía Group: presentación de prendas."
       }
     ],
     "externalUrl": "https://emmanuelaranguibelgraphicdesigner.netlify.app/proyectos/utopia-group-catalogo-textil",

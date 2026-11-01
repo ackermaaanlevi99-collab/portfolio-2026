@@ -1,0 +1,563 @@
+{
+  "generatedFrom": "Drive carpeta EAG",
+  "stills": [
+    {
+      "source": "ANA 9_16-01.jpg",
+      "output": "public/assets/projects/ana-valdez/gallery-01.webp",
+      "width": 1118,
+      "height": 1800,
+      "bytes": 73840,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA 9_16-02.jpg",
+      "output": "public/assets/projects/ana-valdez/gallery-02.webp",
+      "width": 1118,
+      "height": 1800,
+      "bytes": 81138,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA 9_16-03.jpg",
+      "output": "public/assets/projects/ana-valdez/gallery-03.webp",
+      "width": 1118,
+      "height": 1800,
+      "bytes": 57448,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA 9_16-04.jpg",
+      "output": "public/assets/projects/ana-valdez/gallery-04.webp",
+      "width": 1118,
+      "height": 1800,
+      "bytes": 37226,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA 9_16-05.jpg",
+      "output": "public/assets/projects/ana-valdez/gallery-05.webp",
+      "width": 1118,
+      "height": 1800,
+      "bytes": 23998,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA 9_16-06.jpg",
+      "output": "public/assets/projects/ana-valdez/gallery-06.webp",
+      "width": 1118,
+      "height": 1800,
+      "bytes": 110568,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-01.png",
+      "output": "public/assets/projects/ana-valdez/gallery-07.webp",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 35422,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-02.png",
+      "output": "public/assets/projects/ana-valdez/gallery-08.webp",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 70694,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-03.png",
+      "output": "public/assets/projects/ana-valdez/gallery-09.webp",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 74692,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-04.png",
+      "output": "public/assets/projects/ana-valdez/gallery-10.webp",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 172750,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-05.png",
+      "output": "public/assets/projects/ana-valdez/gallery-11.webp",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 111050,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-06.png",
+      "output": "public/assets/projects/ana-valdez/gallery-12.webp",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 111152,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-07.png",
+      "output": "public/assets/projects/ana-valdez/gallery-13.webp",
+      "width": 1652,
+      "height": 1800,
+      "bytes": 143400,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-08.png",
+      "output": "public/assets/projects/ana-valdez/gallery-14.webp",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 184042,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-09.png",
+      "output": "public/assets/projects/ana-valdez/gallery-15.webp",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 107402,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-10.png",
+      "output": "public/assets/projects/ana-valdez/gallery-16.webp",
+      "width": 1657,
+      "height": 1800,
+      "bytes": 83028,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "ANA VALDEZ-11.png",
+      "output": "public/assets/projects/ana-valdez/gallery-17.webp",
+      "width": 1800,
+      "height": 1800,
+      "bytes": 39990,
+      "project": "ana-valdez"
+    },
+    {
+      "source": "Sin título-1_Mesa de trabajo 1.png",
+      "output": "public/assets/projects/usb/gallery-03.webp",
+      "width": 1800,
+      "height": 573,
+      "bytes": 19990,
+      "project": "usb"
+    },
+    {
+      "source": "Sin título-1_Mesa de trabajo 1 copia.png",
+      "output": "public/assets/projects/usb/gallery-04.webp",
+      "width": 1636,
+      "height": 1800,
+      "bytes": 172524,
+      "project": "usb"
+    },
+    {
+      "source": "Sin título-1_Mesa de trabajo 1 copia 2.png",
+      "output": "public/assets/projects/usb/gallery-05.webp",
+      "width": 782,
+      "height": 1800,
+      "bytes": 162152,
+      "project": "usb"
+    },
+    {
+      "source": "Sin título-1_Mesa de trabajo 1 copia 3.png",
+      "output": "public/assets/projects/usb/gallery-06.webp",
+      "width": 723,
+      "height": 1800,
+      "bytes": 47318,
+      "project": "usb"
+    },
+    {
+      "source": "Sin título-1_Mesa de trabajo 1 copia 4.png",
+      "output": "public/assets/projects/usb/gallery-07.webp",
+      "width": 1669,
+      "height": 1800,
+      "bytes": 109562,
+      "project": "usb"
+    },
+    {
+      "source": "Sin título-1_Mesa de trabajo 1 copia 5.png",
+      "output": "public/assets/projects/usb/gallery-08.webp",
+      "width": 1800,
+      "height": 1532,
+      "bytes": 89958,
+      "project": "usb"
+    },
+    {
+      "source": "Sin título-1_Mesa de trabajo 1 copia 6.png",
+      "output": "public/assets/projects/usb/gallery-09.webp",
+      "width": 1800,
+      "height": 1495,
+      "bytes": 88698,
+      "project": "usb"
+    },
+    {
+      "source": "Sin título-1_Mesa de trabajo 1 copia 7.png",
+      "output": "public/assets/projects/usb/gallery-10.webp",
+      "width": 1800,
+      "height": 492,
+      "bytes": 20566,
+      "project": "usb"
+    },
+    {
+      "source": "PORTAFOLO MNTAJE ARMADO 2-02-02.png",
+      "output": "public/assets/projects/portfolio-2026/gallery-03.webp",
+      "width": 1800,
+      "height": 731,
+      "bytes": 131424,
+      "project": "portfolio-2026"
+    },
+    {
+      "source": "PORTAFOLO MNTAJE ARMADO 2-05.png",
+      "output": "public/assets/projects/portfolio-2026/gallery-04.webp",
+      "width": 1747,
+      "height": 1800,
+      "bytes": 291904,
+      "project": "portfolio-2026"
+    },
+    {
+      "source": "PORTAFOLO MNTAJE ARMADO 2-06.png",
+      "output": "public/assets/projects/portfolio-2026/gallery-05.webp",
+      "width": 1800,
+      "height": 1732,
+      "bytes": 344060,
+      "project": "portfolio-2026"
+    },
+    {
+      "source": "PORTAFOLO MNTAJE ARMADO 2-07.png",
+      "output": "public/assets/projects/portfolio-2026/gallery-06.webp",
+      "width": 1800,
+      "height": 1791,
+      "bytes": 212944,
+      "project": "portfolio-2026"
+    },
+    {
+      "source": "PORTAFOLO MNTAJE ARMADO 2-09.png",
+      "output": "public/assets/projects/portfolio-2026/gallery-07.webp",
+      "width": 1800,
+      "height": 731,
+      "bytes": 103508,
+      "project": "portfolio-2026"
+    },
+    {
+      "source": "UOPIA PORTAFOLIO MONTAJE-01.png",
+      "output": "public/assets/projects/utopia/gallery-02.webp",
+      "width": 586,
+      "height": 1800,
+      "bytes": 107282,
+      "project": "utopia"
+    },
+    {
+      "source": "Image_to_cinematic_composition_2K_202607040005.jpeg",
+      "output": "public/assets/eag/stills/composicion-cinematica.webp",
+      "width": 1344,
+      "height": 1800,
+      "bytes": 122048,
+      "project": null
+    }
+  ],
+  "motion": [
+    {
+      "source": "GIFF--DISEÑador.gif",
+      "output": "public/assets/eag/motion/giff-disenador.webp",
+      "frames": 58,
+      "sourceWidth": 5834,
+      "sourceFrameHeight": 2369,
+      "width": 720,
+      "height": 292,
+      "bytes": 410738
+    },
+    {
+      "source": "QUIVE-Recuperado (1).gif",
+      "output": "public/assets/eag/motion/quive-recuperado-1.webp",
+      "frames": 500,
+      "sourceWidth": 485,
+      "sourceFrameHeight": 216,
+      "width": 485,
+      "height": 216,
+      "bytes": 570962
+    },
+    {
+      "source": "QUIVE-Recuperado.gif",
+      "output": "public/assets/eag/motion/quive-recuperado.webp",
+      "frames": 1,
+      "sourceWidth": 3146,
+      "sourceFrameHeight": 1400,
+      "width": 720,
+      "height": 320,
+      "bytes": 2902
+    },
+    {
+      "source": "CESSNA-GIF.gif",
+      "output": "public/assets/eag/motion/cessna-gif.webp",
+      "frames": 121,
+      "sourceWidth": 523,
+      "sourceFrameHeight": 215,
+      "width": 523,
+      "height": 215,
+      "bytes": 383166
+    },
+    {
+      "source": "PUBLICIDAD.gif",
+      "output": "public/assets/eag/motion/publicidad.webp",
+      "frames": 4,
+      "sourceWidth": 1400,
+      "sourceFrameHeight": 85,
+      "width": 720,
+      "height": 44,
+      "bytes": 12866
+    },
+    {
+      "source": "GID-3D.gif",
+      "output": "public/assets/eag/motion/gid-3d.webp",
+      "frames": 4,
+      "sourceWidth": 1400,
+      "sourceFrameHeight": 85,
+      "width": 720,
+      "height": 44,
+      "bytes": 14536
+    },
+    {
+      "source": "SUBLIMATION-GIF.gif",
+      "output": "public/assets/eag/motion/sublimation-gif.webp",
+      "frames": 5,
+      "sourceWidth": 1400,
+      "sourceFrameHeight": 85,
+      "width": 720,
+      "height": 44,
+      "bytes": 16672
+    },
+    {
+      "source": "BORDADO-GIF.gif",
+      "output": "public/assets/eag/motion/bordado-gif.webp",
+      "frames": 6,
+      "sourceWidth": 1400,
+      "sourceFrameHeight": 85,
+      "width": 720,
+      "height": 44,
+      "bytes": 19602
+    },
+    {
+      "source": "GIFF--DISEÑO-PUBLICITARIO.gif",
+      "output": "public/assets/eag/motion/giff-diseno-publicitario.webp",
+      "frames": 34,
+      "sourceWidth": 5834,
+      "sourceFrameHeight": 2369,
+      "width": 720,
+      "height": 292,
+      "bytes": 161626
+    },
+    {
+      "source": "STATS-GIF1.gif",
+      "output": "public/assets/eag/motion/stats-gif1.webp",
+      "frames": 20,
+      "sourceWidth": 5834,
+      "sourceFrameHeight": 2369,
+      "width": 720,
+      "height": 292,
+      "bytes": 261420
+    },
+    {
+      "source": "TEXTILE-DESING.gif",
+      "output": "public/assets/eag/motion/textile-desing.webp",
+      "frames": 34,
+      "sourceWidth": 5834,
+      "sourceFrameHeight": 2369,
+      "width": 720,
+      "height": 292,
+      "bytes": 140008
+    },
+    {
+      "source": "3DDDD.gif",
+      "output": "public/assets/eag/motion/3dddd.webp",
+      "frames": 34,
+      "sourceWidth": 5834,
+      "sourceFrameHeight": 2369,
+      "width": 720,
+      "height": 292,
+      "bytes": 142988
+    },
+    {
+      "source": "SERVICIOS-ULTIMOO.gif",
+      "output": "public/assets/eag/motion/servicios-ultimoo.webp",
+      "frames": 38,
+      "sourceWidth": 5834,
+      "sourceFrameHeight": 2369,
+      "width": 720,
+      "height": 292,
+      "bytes": 127012
+    },
+    {
+      "source": "star.gif",
+      "output": "public/assets/eag/motion/star.webp",
+      "frames": 3,
+      "sourceWidth": 1400,
+      "sourceFrameHeight": 464,
+      "width": 720,
+      "height": 239,
+      "bytes": 5334
+    },
+    {
+      "source": "SERVICIOS-GIF.gif",
+      "output": "public/assets/eag/motion/servicios-gif.webp",
+      "frames": 20,
+      "sourceWidth": 5834,
+      "sourceFrameHeight": 2369,
+      "width": 720,
+      "height": 292,
+      "bytes": 63682
+    },
+    {
+      "source": "168f90243101687.697bad932ef12.gif",
+      "output": "public/assets/eag/motion/168f90243101687-697bad932ef12.webp",
+      "frames": 36,
+      "sourceWidth": 1400,
+      "sourceFrameHeight": 85,
+      "width": 720,
+      "height": 44,
+      "bytes": 8202
+    }
+  ],
+  "skipped": [
+    {
+      "src": "PUBLICIDAD (1).gif",
+      "reason": "idéntico byte a byte a PUBLICIDAD.gif"
+    }
+  ],
+  "projectsGallery": {
+    "ana-valdez": [
+      {
+        "src": "/assets/projects/ana-valdez/gallery-01.webp",
+        "alt": "Imagen 1 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-02.webp",
+        "alt": "Imagen 2 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-03.webp",
+        "alt": "Imagen 3 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-04.webp",
+        "alt": "Imagen 4 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-05.webp",
+        "alt": "Imagen 5 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-06.webp",
+        "alt": "Imagen 6 del proyecto ANA VALDEZ — BRANDING, formato 9:16."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-07.webp",
+        "alt": "Pieza 1 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-08.webp",
+        "alt": "Pieza 2 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-09.webp",
+        "alt": "Pieza 3 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-10.webp",
+        "alt": "Pieza 4 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-11.webp",
+        "alt": "Pieza 5 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-12.webp",
+        "alt": "Pieza 6 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-13.webp",
+        "alt": "Pieza 7 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-14.webp",
+        "alt": "Pieza 8 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-15.webp",
+        "alt": "Pieza 9 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-16.webp",
+        "alt": "Pieza 10 del proyecto ANA VALDEZ — BRANDING."
+      },
+      {
+        "src": "/assets/projects/ana-valdez/gallery-17.webp",
+        "alt": "Pieza 11 del proyecto ANA VALDEZ — BRANDING."
+      }
+    ],
+    "usb": [
+      {
+        "src": "/assets/projects/usb/gallery-03.webp",
+        "alt": "Pieza 1 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-04.webp",
+        "alt": "Pieza 2 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-05.webp",
+        "alt": "Pieza 3 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-06.webp",
+        "alt": "Pieza 4 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-07.webp",
+        "alt": "Pieza 5 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-08.webp",
+        "alt": "Pieza 6 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-09.webp",
+        "alt": "Pieza 7 del proyecto de prendas para la USB."
+      },
+      {
+        "src": "/assets/projects/usb/gallery-10.webp",
+        "alt": "Pieza 8 del proyecto de prendas para la USB."
+      }
+    ],
+    "portfolio-2026": [
+      {
+        "src": "/assets/projects/portfolio-2026/gallery-03.webp",
+        "alt": "Montaje 1 del portafolio 2026, presentación de piezas."
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/gallery-04.webp",
+        "alt": "Montaje 2 del portafolio 2026, presentación de piezas."
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/gallery-05.webp",
+        "alt": "Montaje 3 del portafolio 2026, presentación de piezas."
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/gallery-06.webp",
+        "alt": "Montaje 4 del portafolio 2026, presentación de piezas."
+      },
+      {
+        "src": "/assets/projects/portfolio-2026/gallery-07.webp",
+        "alt": "Montaje 5 del portafolio 2026, presentación de piezas."
+      }
+    ],
+    "utopia": [
+      {
+        "src": "/assets/projects/utopia/gallery-02.webp",
+        "alt": "Montaje del proyecto Utopía Group: presentación de prendas."
+      }
+    ]
+  }
+}

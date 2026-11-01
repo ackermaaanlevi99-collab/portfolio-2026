@@ -172,6 +172,8 @@ export function mountPortalScene(host: HTMLDivElement, callbacks: PortalCallback
     const width = Math.max(1, host.clientWidth);
     const height = Math.max(1, host.clientHeight);
     camera.aspect = width / height;
+    // Mantiene el objeto completo (anillo y cubos) dentro del encuadre en formatos estrechos.
+    camera.position.z = Math.max(4.35, 4.77 / camera.aspect);
     camera.updateProjectionMatrix();
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, mobileViewport.matches ? 1 : 1.35));
     renderer.setSize(width, height, false);
@@ -183,14 +185,20 @@ export function mountPortalScene(host: HTMLDivElement, callbacks: PortalCallback
   if (!resizeObserver) window.addEventListener('resize', resize);
   resize();
 
-  const updateCubes = (time: number) => {
+  // Entrada: el portal crece desde 84 % y los cubos aparecen; dura INTRO_MS desde
+  // el primer fotograma activo y visible. Sin movimiento no se ejecuta.
+  const INTRO_MS = 1600;
+  let introStart: number | null = null;
+  let introDone = false;
+
+  const updateCubes = (time: number, grow = 1) => {
     for (let index = 0; index < cubeCount; index += 1) {
       const angle = (index / cubeCount) * Math.PI * 2 + time * (index % 2 === 0 ? 0.11 : -0.08);
       const radius = 1.08 + (index % 3) * 0.115;
       const bob = Math.sin(time * 0.7 + index * 1.7) * 0.08;
       cubeTransform.position.set(Math.cos(angle) * radius, Math.sin(angle) * radius * 0.82 + bob, Math.sin(index * 2.1) * 0.13);
       cubeTransform.rotation.set(time * 0.15 + index * 0.3, time * 0.2 + index, time * 0.12 - index * 0.2);
-      cubeTransform.scale.setScalar(index % 4 === 0 ? 0.72 : 0.48 + (index % 3) * 0.08);
+      cubeTransform.scale.setScalar((index % 4 === 0 ? 0.72 : 0.48 + (index % 3) * 0.08) * grow);
       cubeTransform.updateMatrix();
       cubes.setMatrixAt(index, cubeTransform.matrix);
     }
@@ -200,14 +208,23 @@ export function mountPortalScene(host: HTMLDivElement, callbacks: PortalCallback
   const renderFrame = (timestamp: number) => {
     if (failed) return;
     const time = active ? timestamp * 0.001 : 0;
+    let intro = 1;
+    if (active && !introDone && timestamp > 0) {
+      if (introStart === null) introStart = timestamp;
+      intro = Math.min(1, (timestamp - introStart) / INTRO_MS);
+      if (intro >= 1) introDone = true;
+    }
+    const eased = 1 - Math.pow(1 - intro, 3);
     pointerX += (targetPointerX - pointerX) * 0.075;
     pointerY += (targetPointerY - pointerY) * 0.075;
+    portal.scale.setScalar(0.84 + 0.16 * eased);
     portal.rotation.x = -0.12 + pointerY * 0.1;
-    portal.rotation.y = pointerX * 0.15 + Math.sin(time * 0.18) * 0.025;
+    portal.rotation.y = pointerX * 0.15 + Math.sin(time * 0.18) * 0.025 + (1 - eased) * -0.9;
     portal.rotation.z = scrollProgress * 0.04 + Math.sin(time * 0.13) * 0.018;
     centerMaterial.uniforms.uTime.value = time;
-    if (active) updateCubes(time);
+    if (active) updateCubes(time, eased);
     else updateCubes(0);
+    host.dataset.intro = active ? (introDone ? 'done' : 'running') : 'idle';
     renderer.render(scene, camera);
   };
 

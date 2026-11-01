@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { getActiveServices, getProjectsForService } from '@/lib/projects';
 import site from '@/content/site.json';
+import serviceMotion from '@/content/service-motion.json';
+import MotionArchive, { type ArchiveItem } from '@/components/ui/MotionArchive';
 
 export default function Services({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2' }) {
   const Heading = headingLevel;
@@ -32,6 +34,9 @@ export default function Services({ headingLevel = 'h2' }: { headingLevel?: 'h1' 
                       </Link>
                     ))}
                   </nav>
+                  {(serviceMotion as Record<string, ArchiveItem[]>)[service.id]?.length ? (
+                    <MotionArchive items={(serviceMotion as Record<string, ArchiveItem[]>)[service.id]} className="motion-archive--row" />
+                  ) : null}
                 </div>
               </article>
             );

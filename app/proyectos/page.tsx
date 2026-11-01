@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import ProjectGrid from '@/components/sections/ProjectGrid';
+import MotionArchive, { type ArchiveItem } from '@/components/ui/MotionArchive';
+import archive from '@/content/eag-archive.json';
 import { getPublishedProjects } from '@/lib/projects';
 import siteConfig from '@/config/site';
 import site from '@/content/site.json';
@@ -21,6 +23,10 @@ export default function ProjectsPage() {
         <p>{site.portfolio.description} {projects.length} proyectos seleccionados, vinculados con sus fuentes y fichas de origen.</p>
       </header>
       <ProjectGrid projects={projects} eagerFirstCard />
+      <section className="motion-archive-section" aria-labelledby="motion-archive-title">
+        <div className="project-gallery__heading"><h2 id="motion-archive-title">Archivo en movimiento</h2><span className="eyebrow">{String(archive.length).padStart(2, '0')} PIEZAS</span></div>
+        <MotionArchive items={archive as ArchiveItem[]} />
+      </section>
     </section>
   );
 }

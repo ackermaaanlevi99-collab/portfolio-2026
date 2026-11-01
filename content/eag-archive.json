@@ -1,0 +1,137 @@
+[
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/giff-disenador.webp",
+    "poster": "/assets/eag/motion/giff-disenador-poster.webp",
+    "width": 720,
+    "height": 292,
+    "alt": "Animación 01 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/quive-recuperado-1.webp",
+    "poster": "/assets/eag/motion/quive-recuperado-1-poster.webp",
+    "width": 485,
+    "height": 216,
+    "alt": "Animación 02 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/quive-recuperado.webp",
+    "poster": "/assets/eag/motion/quive-recuperado-poster.webp",
+    "width": 720,
+    "height": 320,
+    "alt": "Animación 03 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/cessna-gif.webp",
+    "poster": "/assets/eag/motion/cessna-gif-poster.webp",
+    "width": 523,
+    "height": 215,
+    "alt": "Animación 04 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/publicidad.webp",
+    "poster": "/assets/eag/motion/publicidad-poster.webp",
+    "width": 720,
+    "height": 44,
+    "alt": "Animación 05 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/gid-3d.webp",
+    "poster": "/assets/eag/motion/gid-3d-poster.webp",
+    "width": 720,
+    "height": 44,
+    "alt": "Animación 06 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/sublimation-gif.webp",
+    "poster": "/assets/eag/motion/sublimation-gif-poster.webp",
+    "width": 720,
+    "height": 44,
+    "alt": "Animación 07 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/bordado-gif.webp",
+    "poster": "/assets/eag/motion/bordado-gif-poster.webp",
+    "width": 720,
+    "height": 44,
+    "alt": "Animación 08 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/giff-diseno-publicitario.webp",
+    "poster": "/assets/eag/motion/giff-diseno-publicitario-poster.webp",
+    "width": 720,
+    "height": 292,
+    "alt": "Animación 09 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/stats-gif1.webp",
+    "poster": "/assets/eag/motion/stats-gif1-poster.webp",
+    "width": 720,
+    "height": 292,
+    "alt": "Animación 10 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/textile-desing.webp",
+    "poster": "/assets/eag/motion/textile-desing-poster.webp",
+    "width": 720,
+    "height": 292,
+    "alt": "Animación 11 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/3dddd.webp",
+    "poster": "/assets/eag/motion/3dddd-poster.webp",
+    "width": 720,
+    "height": 292,
+    "alt": "Animación 12 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/servicios-ultimoo.webp",
+    "poster": "/assets/eag/motion/servicios-ultimoo-poster.webp",
+    "width": 720,
+    "height": 292,
+    "alt": "Animación 13 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/star.webp",
+    "poster": "/assets/eag/motion/star-poster.webp",
+    "width": 720,
+    "height": 239,
+    "alt": "Animación 14 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/servicios-gif.webp",
+    "poster": "/assets/eag/motion/servicios-gif-poster.webp",
+    "width": 720,
+    "height": 292,
+    "alt": "Animación 15 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "motion",
+    "src": "/assets/eag/motion/168f90243101687-697bad932ef12.webp",
+    "poster": "/assets/eag/motion/168f90243101687-697bad932ef12-poster.webp",
+    "width": 720,
+    "height": 44,
+    "alt": "Animación 16 del archivo de diseño de Emmanuel Aranguibel."
+  },
+  {
+    "kind": "still",
+    "src": "/assets/eag/stills/composicion-cinematica.webp",
+    "width": 1344,
+    "height": 1800,
+    "alt": "Composición cinematográfica del archivo 2026."
+  }
+]
