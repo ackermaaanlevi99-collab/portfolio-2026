@@ -512,3 +512,43 @@ img { max-width: 100%; }
   .scene-story__thumbnail { flex-basis: 42px; width: 42px; height: 42px; }
   .project-sequence__item strong { font-size: .75rem; }
 }
+
+/* Experimento opcional: imagen de proyecto como nube de partículas (GatherExperiment). Usa solo tokens del sitio. */
+.project-experiment { margin: 0 0 clamp(4rem, 8vw, 8rem); }
+.project-experiment__intro { max-width: 60ch; margin: 0 0 1.2rem; color: var(--text-2); }
+.gather { display: grid; gap: var(--sp-4); }
+.gather__stage {
+  position: relative;
+  width: min(100%, calc(78vh * var(--gather-ratio, 0.8)));
+  aspect-ratio: var(--gather-ratio, 0.8);
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--bg-1);
+  border: 1px solid var(--line);
+}
+.gather__image { object-fit: contain; }
+.gather__image--hidden { display: none; }
+.gather__host { position: absolute; inset: 0; }
+.gather__host canvas { cursor: crosshair; touch-action: pan-y; }
+.gather__status { margin: 0; color: var(--text-2); font: var(--fs-meta)/1.5 var(--font-mono); text-transform: uppercase; letter-spacing: .04em; }
+.gather__status--overlay { position: absolute; left: var(--sp-4); bottom: var(--sp-4); z-index: 1; }
+.gather__sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.gather__controls { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: center; justify-content: center; }
+.gather__range { display: inline-flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; font: var(--fs-meta)/1 var(--font-mono); text-transform: uppercase; color: var(--text-2); }
+.gather__range input[type="range"] { width: min(80vw, 260px); accent-color: var(--accent); }
+.gather__button {
+  padding: .6rem 1rem;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--text-1);
+  font: var(--fs-meta)/1 var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  cursor: pointer;
+  transition: border-color var(--t-fast) ease, color var(--t-fast) ease;
+}
+.gather__button:hover { border-color: var(--accent); color: var(--accent); }
+.gather__button--primary { border-color: var(--accent); color: var(--accent); }
+.gather__button:focus-visible, .gather__range input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.gather__button:disabled { opacity: .5; cursor: progress; }
+@media (prefers-reduced-motion: reduce) { .gather__button { transition: none; } }
