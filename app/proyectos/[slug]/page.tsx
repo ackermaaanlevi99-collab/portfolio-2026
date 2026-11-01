@@ -5,6 +5,8 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import Gallery from '@/components/ui/Gallery';
 import Scene16Viewer from '@/components/sections/Scene16Viewer';
+import GatherExperiment from '@/components/ui/GatherExperiment';
+import GatherScrollStory from '@/components/ui/GatherScrollStory';
 import CTA from '@/components/ui/CTA';
 import { getProjectBySlug, getProjectPaths, getPublishedProjects, getServiceTitle } from '@/lib/projects';
 import { getCategoryLabel } from '@/lib/categories';
@@ -139,6 +141,20 @@ export default async function ProjectPage({ params }: PageProps) {
         <section className="project-gallery" aria-labelledby="gallery-title">
           <div className="project-gallery__heading"><h2 id="gallery-title">Detalles de la pieza</h2><span className="eyebrow">{String(project.gallery.length).padStart(2, '0')} IMÁGENES</span></div>
           <Gallery images={project.gallery} title={project.title} />
+        </section>
+      )}
+
+      {project.particles && (
+        <section className="project-experiment" aria-labelledby="experiment-title">
+          <div className="project-gallery__heading"><h2 id="experiment-title">Experimento: de imagen a partícula</h2><span className="eyebrow">Opcional</span></div>
+          <p className="project-experiment__intro">La imagen del proyecto puede convertirse en partículas con un botón o con el desplazamiento. La galería y la imagen original siempre están disponibles.</p>
+          <GatherExperiment src={project.cover} alt={project.coverAlt} title={project.title} />
+          <div className="project-experiment__sub"><h3>Narrativa con desplazamiento</h3></div>
+          <GatherScrollStory
+            src={project.cover}
+            alt={project.coverAlt}
+            steps={['Imagen original del proyecto', 'Los píxeles se separan en puntos', 'Los puntos vuelven a formar la imagen']}
+          />
         </section>
       )}
 

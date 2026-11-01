@@ -39,6 +39,8 @@ export interface ProjectItem {
   externalUrl?: string | null;
   featured: boolean;
   grid?: 'wide' | 'portrait' | 'square';
+  /** Muestra el experimento opcional de imagen a partícula debajo de la galería. */
+  particles?: boolean;
 }
 
 export interface ServiceItem {
