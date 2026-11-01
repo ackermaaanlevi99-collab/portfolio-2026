@@ -303,7 +303,8 @@ img { max-width: 100%; }
 .scene-story__controls progress::-webkit-progress-value { background: var(--accent); transition: width var(--t-fast) linear; }
 .scene-story__controls progress::-moz-progress-bar { background: var(--accent); }
 
-.about-copy__title { max-width: 12ch; margin: 0 0 1.2rem; font: 600 var(--fs-h2)/.98 var(--font-display); letter-spacing: -.045em; }
+/* Títulos pixel en Sobre mí (guía visual: verde pixel). Usa la fuente pixel ya cargada en el layout. */
+.about-copy__title { max-width: 16ch; margin: 0 0 1.2rem; color: var(--accent); font: 400 clamp(1.5rem, 3vw, 2.4rem)/1.3 var(--font-pixel); letter-spacing: 0; text-wrap: balance; }
 .about-tools { display: flex; flex-wrap: wrap; gap: .55rem; margin: .85rem 0 0; padding: 0; list-style: none; }
 .about-experience { margin-top: 2.4rem; }
 .reveal { opacity: 1; transform: none; transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out); }
