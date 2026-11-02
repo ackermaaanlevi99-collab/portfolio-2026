@@ -13,7 +13,7 @@ export default function About({ headingLevel = 'h2' }: { headingLevel?: 'h1' | '
 
         <div className="about-copy">
           <p className="eyebrow">{site.person} / {site.location}</p>
-          <Heading id="about-title" className="about-copy__title">Diseño gráfico<br />con intención.</Heading>
+          <Heading id="about-title" className="about-copy__title"><span className="about-line">Diseño gráfico</span><br /><span className="about-line">con intención.</span></Heading>
           <p className="about-copy__story">{site.about.text}</p>
           <div className="about-copy__years">
             <strong>{site.experienceYears}</strong>

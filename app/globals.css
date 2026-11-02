@@ -643,3 +643,28 @@ img { max-width: 100%; }
 .visual-universe__item h3 a { color: var(--text-2); text-decoration: none; }
 .visual-universe__item h3 a:hover { color: var(--accent); }
 .motion-archive--row { margin-top: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); }
+
+/* Fase 2 · pendientes del brief: microinteracciones y foco por teclado.
+   Todo es decorativo: sin soporte de animation-timeline o con reducción de movimiento, el texto se muestra estático. */
+.project-card__link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.form-field label { transition: color var(--t-fast) ease; }
+.form-field:focus-within > label { color: var(--accent); }
+.form-field input, .form-field select, .form-field textarea { transition: border-color var(--t-fast) ease, box-shadow var(--t-fast) ease; }
+.form-submit svg { transition: transform var(--t-fast) var(--ease-out); }
+.form-submit:hover:not(:disabled) svg, .form-submit:focus-visible svg { transform: translateX(3px); }
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .about-copy__title .about-line {
+      display: inline-block;
+      animation: about-line-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 35%;
+    }
+  }
+}
+
+@keyframes about-line-in {
+  from { opacity: 0; transform: translateY(.45em); filter: blur(3px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
