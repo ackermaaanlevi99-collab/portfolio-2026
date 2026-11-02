@@ -4,7 +4,10 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
-import testimonials from '@/content/testimonials.json';
+import testimonialsData from '@/content/testimonials.json';
+
+type Testimonial = { quote: string; name: string; role: string };
+const testimonials: Testimonial[] = testimonialsData;
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
@@ -17,6 +20,9 @@ export default function Testimonials() {
   const next = () => setIndex((i) => (i + 1) % testimonials.length);
   const prev = () => setIndex((i) => (i - 1 + testimonials.length) % testimonials.length);
   const current = testimonials[index];
+
+  // Sin testimonios reales no se muestra la sección (CLAUDE.md: sin placeholders).
+  if (testimonials.length === 0) return null;
 
   return (
     <section id="testimonios" className="relative px-6 py-32 md:px-10">
